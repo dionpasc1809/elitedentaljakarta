@@ -1,0 +1,581 @@
+@font-face {
+    font-family: helvetica-neue;
+    src: url('../fonts/Helvetica Neue LT Std 25 Ultra Light_0.otf');
+}
+
+@font-face {
+    font-family: klavika-l;
+    src: url('../fonts/Klavika-Light.otf');
+}
+
+@font-face {
+    font-family: klavika-m;
+    src: url('../fonts/Klavika-Medium.otf');
+}
+
+.page-header {
+    display:inline-block;
+    width: 100%;
+}
+
+.logo-top {
+    text-align: center;
+    min-height: 50px;
+}
+
+.logo-img {
+    height:50px;
+}
+
+.li-logo-img {
+    padding:0px 40px !important;
+}
+
+.menubar {
+    /*width: 100%;*/
+    display:inline-block;
+    font-family: klavika-l;
+    text-align: center;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.menubar.hover-top {
+    position: fixed;
+    display: block;
+    width: 100%;
+    top:0;
+    z-index: 500;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.menubar ul {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.menubar ul li {
+    font-family: klavika-l;
+    text-transform: uppercase;
+    float:left;
+    display: inline;
+    padding: 15px 40px;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+.carousel-indicators .active {
+    background-color: #2686bf;
+    margin: 0px 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.carousel-indicators li {
+    background-color: #FFF;
+    border: 2px solid #FFF;
+    margin: 0px 10px;
+    width: 16px;
+    height: 16px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+/* ---------------------------- section : aboutus ---------------------------- */
+#aboutus {
+    position:relative;
+}
+
+.carousel-control {
+    vertical-align: middle;
+}
+
+.carousel-control .arrow-left {
+    width: 23px;
+    height: 42px;
+    background-image:url(../images/home/arrow.png);
+    background-position: left top;
+    display: inline-block;
+}
+
+.carousel-control .arrow-right {
+    width: 23px;
+    height: 42px;
+    background-image:url(../images/home/arrow.png);
+    background-position: right top;
+    display: inline-block;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+}
+
+#carouselAboutus .carousel-inner .item.active .about-float {
+    opacity:1;
+    animation: moveInFloat 0.5s;
+    -webkit-animation: moveInFloat 0.5s;
+}
+
+@keyframes moveInFloat {
+    0% {
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    100% {
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
+@-webkit-keyframes moveInFloat {
+    0% {
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    100% {
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
+#carouselAboutus .carousel-inner .item .about-float {
+    opacity:0;
+    animation: moveOutFloat 0.5s;
+    -webkit-animation: moveOutFloat 0.5s;
+}
+
+@keyframes moveOutFloat {
+    0% {
+        opacity:1;
+        transform:translateX(0px);
+    }
+    100% {
+        opacity:0;
+        transform:translateX(-100px);
+    }
+}
+
+@-webkit-keyframes moveOutFloat {
+    0% {
+        opacity:1;
+        transform:translateX(0px);
+    }
+    100% {
+        opacity:0;
+        transform:translateX(-100px);
+    }
+}
+
+.filler-middle {
+    display: inline-block;
+    width:0px;
+    height: 50%;
+}
+
+.appointment-dropdown {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 72px;
+    background-color:#2686bf;
+    z-index:25;
+    cursor:hand;
+    cursor:pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.appointment-form {
+    position:absolute;
+    top: 100%;
+    width: 100%;
+    height:500px;
+    padding: 15px;
+    transform: scaleY(0);
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    background-color:rgba(38,134,191,1);
+    border-radius: 0px 0px 5px 5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.appointment-dropdown.dropped .appointment-form {
+    transform: scaleY(1);
+}
+
+.appointment-dropdown.dropped .form-group {
+    opacity:1;
+    transform-origin: left top;
+    animation: apFormIn 0.7s linear;
+}
+
+.appointment-dropdown.dropped .form-group:nth-child(1) {
+    animation-duration:0.7s;
+}
+.appointment-dropdown.dropped .form-group:nth-child(2) {
+    animation-duration:0.9s;
+}
+.appointment-dropdown.dropped .form-group:nth-child(3) {
+    animation-duration:1.1s;
+}
+
+@keyframes apFormIn {
+    0% {
+        transform: scale(0);
+        opacity:0;
+    }
+    50% {
+        transform: scale(0);
+        opacity:0;
+    }
+    100% {
+        transform: scale(1);
+        opacity:1;
+    }
+}
+
+.appointment-dropdown .form-group {
+    opacity:0;
+    animation: apFormOut 0.5s;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes apFormOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+.appointment-form .form-group label {
+    text-align: left;
+    display: block;
+    color: #FFF;
+    font-family: klavika-l;
+    text-transform: uppercase;
+}
+
+.appointment-form .form-group textarea {
+    resize: none;
+    height: 34px;
+}
+
+.appointment-form .appointment-hr {
+    margin: 15px 0px;
+    border-top: medium none;
+    border-bottom: 1px dashed #CCC;
+}
+
+.appointment-filler {
+    width: 100%;
+    height: 72px;
+}
+
+.appointment-dropdown .container {
+    text-align:center;
+    position: relative;
+}
+
+.title-appointment {
+    font-family:klavika-m;
+    font-size:35px;
+    color: #FFF;
+    line-height:72px;
+    border-bottom: 1px solid #FFF;
+}
+
+.triangle {
+    position:absolute;
+    bottom:-22px;
+    left:50%;
+    margin-left:-25px;
+    width: 46px;
+    height: 46px;
+    outline: 2px solid #2686bf;
+    background-color:#2686bf;
+    z-index: -1;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-float {
+    position:absolute;
+    top: 90px;
+    left:50%;
+    display: inline-block;
+    width:500px;
+    min-height: 500px;
+
+}
+
+.about-float .about-float-title {
+    font-family: helvetica-neue;
+    font-weight: bold;
+    font-size: 72px;
+    color: #1a75a6;
+}
+
+.about-float .about-float-desc {
+    font-family: klavika-l;
+    font-size: 18px;
+    color: #4586a7;
+}
+
+/*.appointment-dropdown:hover .triangle {
+  background-color: #FFF;
+}*/
+
+/* -------------------------- end section : aboutus -------------------------- */
+
+/* ---------------------------- section : treatment ---------------------------- */
+#treatment {
+    position:relative;
+    background-color: #2686bf;
+    /*background-image:url("../images/home/treatment-image.jpg");
+    background-position:right top;
+    background-size: 100% auto;*/
+    background-repeat:no-repeat;
+    width:100%;
+    height: auto;
+}
+
+#carouselTreatment .carousel-inner .item {
+    min-height: 600px;
+}
+
+#carouselTreatment .carousel-control .arrow-left {
+    width: 23px;
+    height: 42px;
+    background-image:url(../images/home/arrow-white.png);
+    background-position: left top;
+    display: inline-block;
+}
+
+#carouselTreatment .carousel-control .arrow-right {
+    width: 23px;
+    height: 42px;
+    background-image:url(../images/home/arrow-white.png);
+    background-position: right top;
+    display: inline-block;
+}
+
+#carouselTreatment .carousel-indicators {
+    bottom: -50px;
+}
+
+#carouselTreatment .carousel-indicators li {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+}
+
+
+.float-con {
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.treatment-title {
+    font-family:helvetica-neue;
+    font-weight: bold;
+    font-size:91px;
+    color:#FFF;
+    text-align: center;
+}
+
+.treatment-item-title {
+    font-family: klavika-m;
+    /*font-weight: bold;*/
+    color: #FFF;
+    font-size: 18px;
+}
+
+.treatment-item-title-small {
+    font-size: 80%;
+}
+
+.treatment-item-list {
+    font-family: klavika-l;
+    font-weight: normal;
+    color: #FFF;
+    font-size: 18px;
+    padding-left: 16px;
+}
+
+.treatment-item-list li {
+    font-size: 85%;
+    font-style:normal;
+}
+
+.treatment-item-list-title {
+    font-style: italic;
+    /*text-decoration: underline;*/
+}
+
+#carouselTreatment .carousel-inner .item.active > .container > .row {
+    opacity:1;
+    animation: treatmentIn 0.5s;
+    -webkit-animation: treatmentIn 0.5s;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes treatmentIn {
+    0% {
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    100% {
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes treatmentIn {
+    0% {
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    100% {
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+
+#carouselTreatment .carousel-inner .item > .container > .row {
+    opacity:0;
+    animation: treatmentOut 0.1s;
+    -webkit-animation: treatmentOut 0.1s;
+    -webkit-transition: opacity 0.1s ease-in-out;
+    -moz-transition: opacity 0.1s ease-in-out;
+    -ms-transition: opacity 0.1s ease-in-out;
+    -o-transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
+}
+
+@keyframes treatmentOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-webkit-keyframes treatmentOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+/* -------------------------- end section : treatment -------------------------- */
+
+/* -------------------------- section : contact -------------------------- */
+#contact {
+    position:relative;
+    background-color: #FFF;
+    /*background-image:url("../images/home/treatment-image.jpg");
+    background-position:right top;
+    background-size: 100% auto;*/
+    background-repeat:no-repeat;
+    width:100%;
+    min-height: 750px;
+    height: auto;
+}
+
+.contact-title {
+    font-family: helvetica-neue;
+    font-size: 91px;
+    color: #1a75a6;
+}
+
+.contact-table {
+    width: 100%;
+    border:none;
+}
+
+.contact-table tr td {
+    font-family: klavika-l;
+    font-size: 20px;
+    color: #1a75a6;
+    vertical-align: middle;
+    padding: 5px 10px;
+}
+
+/* ------------------------ end section : contact ------------------------ */
+
+/* ------------------------- Bootstrap media container ------------------------- */
+@media screen and (max-width: 991px){/* for Desktops */
+
+}
+
+@media screen and (min-width: 768px){/* for Tablets */
+
+}
+
+@media screen and (max-width: 767px){/* for Small Phones */
+
+}
