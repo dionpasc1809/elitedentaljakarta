@@ -24,7 +24,12 @@
 }
 
 .logo-img {
-    height:50px;
+    height:100px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .li-logo-img {
@@ -52,6 +57,14 @@
     background-color: rgba(255,255,255,0.8);
 }
 
+.menubar.hover-top .logo-img {
+    height: 50px;
+}
+
+.menubar.hover-top ul li {
+    padding: 15px 40px;
+}
+
 .menubar ul {
     list-style: none;
     text-align: center;
@@ -65,7 +78,7 @@
     text-transform: uppercase;
     float:left;
     display: inline;
-    padding: 15px 40px;
+    padding: 40px 40px;
 }
 
 .carousel-fade .carousel-inner .item {
@@ -239,6 +252,37 @@
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+}
+
+.form-group.has-error .help-block.form-error {
+    text-align: left;
+    font-weight: bold;
+    font-family: klavika-l;
+}
+
+.btn-appointment {
+    font-family: klavika-m;
+    font-size: 18px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
+    background-image: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
+    background-image: -o-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
+    background-size: 250% 100%;
+    background-position: top right;
+    color: #FFF !important;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-appointment:hover {
+    background-position: top left;
+    background-color:transparent;
+    color:#2686BF !important;
 }
 
 .appointment-dropdown.dropped .appointment-form {
@@ -548,7 +592,7 @@
 
 .contact-title {
     font-family: helvetica-neue;
-    font-size: 91px;
+    font-size: 51px;
     color: #1a75a6;
 }
 
@@ -559,7 +603,7 @@
 
 .contact-table tr td {
     font-family: klavika-l;
-    font-size: 20px;
+    font-size: 16px;
     color: #1a75a6;
     vertical-align: middle;
     padding: 5px 10px;

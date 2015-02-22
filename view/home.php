@@ -15,81 +15,98 @@
                 <div class="appointment-form">
                     <div style="width: 100%; height: 40px;"></div>
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label><span class="label-title">Name : </span></label>
-                                <input class="form-control" type="text" placeholder="Enter your name" id="inp_name" name="inp_name"/>
-                            </div>
-                            <div class="form-group">
-                                <label><span class="label-title">Email : </span></label>
-                                <input class="form-control" type="text" placeholder="Enter your email" id="inp_email" name="inp_email"/>
-                            </div>
-                            <div class="form-group">
-                                <label><span class="label-title">Phone Number : </span></label>
-                                <input class="form-control" type="text" placeholder="Enter your phone number" id="inp_phone" name="inp_phone"/>
+                        <div class="col-sm-12 alert-content">
+                            <div class="alert alert-success app-alert">
+                                Success! Appointment is submitted
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label><span class="label-title">Address : </span></label>
-                                <input class="form-control" type="text" placeholder="Enter your address" id="inp_address" name="inp_address"/>
+                        <form method="post" id="form-submit-appointment" name="form-submit-appointment">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label><span class="label-title">Name : </span></label>
+                                    <input data-validation="required" data-validation-error-msg="Please enter your name !!" class="form-control" type="text" placeholder="Enter your name" id="inp_name" name="inp_name"/>
+                                </div>
+                                <div class="form-group">
+                                    <label><span class="label-title">Email : </span></label>
+                                    <input data-validation="email" data-validation-error-msg="Please enter your valid email !!" class="form-control" type="text" placeholder="Enter your email" id="inp_email" name="inp_email"/>
+                                </div>
+                                <div class="form-group">
+                                    <label><span class="label-title">Phone Number : </span></label>
+                                    <input data-validation="number" class="form-control" type="text" placeholder="Enter your phone number" id="inp_phone" name="inp_phone" data-validation-error-msg="Please enter your valid phone number !!"/>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label><span class="label-title">City : </span></label>
-                                <input class="form-control" type="text" placeholder="Enter your city" id="inp_city" name="inp_city"/>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label><span class="label-title">Address : </span></label>
+                                    <input data-validation="required" class="form-control" type="text" placeholder="Enter your address" id="inp_address" name="inp_address" data-validation-error-msg="Please enter your address !!"/>
+                                </div>
+                                <div class="form-group">
+                                    <label><span class="label-title">City : </span></label>
+                                    <input data-validation="required" class="form-control" type="text" placeholder="Enter your city" id="inp_city" name="inp_city" data-validation-error-msg="Please enter your city !!"/>
+                                </div>
+                                <div class="form-group">
+                                    <label><span class="label-title"></span>State / Province : </span></label>
+                                    <input data-validation="required" class="form-control" type="text" placeholder="Enter your state / province" id="inp_state" name="inp_state" data-validation-error-msg="Please enter your state / province !!"/>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label><span class="label-title"></span>State / Province : </span></label>
-                                <input class="form-control" type="text" placeholder="Enter your state / province" id="inp_state" name="inp_state"/>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label><span class="label-title">Preffered Appointment Day : </span></label>
+                                    <select class="form-control" id="inp_appointment_day" name="inp_appointment_day">
+                                        <option>Monday</option>
+                                        <option>Tuesday</option>
+                                        <option>Wednesday</option>
+                                        <option>Thursday</option>
+                                        <option>Friday</option>
+                                        <option>Saturday</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label><span class="label-title">Preffered Appointment Time : </span></label>
+                                    <select class="form-control" id="inp_appointment_time" name="inp_appointment_time">
+                                        <option>10.00 – 11.00</option>
+                                        <option>11.00 – 12.00</option>
+                                        <option>12.00 – 13.00</option>
+                                        <option>13.00 – 14.00</option>
+                                        <option>14.00 – 15.00</option>
+                                        <option>15.00 – 16.00</option>
+                                        <option>16.00 – 17.00</option>
+                                        <option>17.00 – 18.00</option>
+                                        <option>18.00 – 19.00</option>
+                                        <option>19.00 – 20.00</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label><span class="label-title">Nature of Appointment : </span></label>
+                                    <select class="form-control" id="inp_appointment_nature" name="inp_appointment_nature">
+                                        <option>General Check Up</option>
+                                        <option>Tooth Filling</option>
+                                        <option>Crown and Bridges</option>
+                                        <option>Dental Implant</option>
+                                        <option>Extraction</option>
+                                        <option>Invisalign</option>
+                                        <option>Damon Braces</option>
+                                        <option>Porcelain Veneer</option>
+                                        <option>Root Canal Treatment</option>
+                                        <option>Teeth Whitening</option>
+                                        <option>Child Dentistry</option>
+                                        <option>Scaling / Tooth Cleaning</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label><span class="label-title">Preffered Appointment Day : </span></label>
-                                <select class="form-control" id="inp_appointment_day" name="inp_appointment_day">
-                                    <option>Monday</option>
-                                    <option>Tuesday</option>
-                                    <option>Wednesday</option>
-                                    <option>Thursday</option>
-                                    <option>Friday</option>
-                                    <option>Saturday</option>
-                                </select>
+                            <div class="col-sm-12">
+                                <hr class="appointment-hr"/>
                             </div>
-                            <div class="form-group">
-                                <label><span class="label-title">Preffered Appointment Time : </span></label>
-                                <select class="form-control" id="inp_appointment_time" name="inp_appointment_time">
-                                    <option>10.00 – 11.00</option>
-                                    <option>11.00 – 12.00</option>
-                                    <option>12.00 – 13.00</option>
-                                    <option>13.00 – 14.00</option>
-                                    <option>14.00 – 15.00</option>
-                                    <option>15.00 – 16.00</option>
-                                    <option>16.00 – 17.00</option>
-                                    <option>17.00 – 18.00</option>
-                                    <option>18.00 – 19.00</option>
-                                    <option>19.00 – 20.00</option>
-                                </select>
+                            <div class="col-sm-12">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <input type="submit" id="submit-appointment" class="btn btn-appointment" value="MAKE APPOINTMENT"/>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label><span class="label-title">Nature of Appointment : </span></label>
-                                <select class="form-control" id="inp_appointment_nature" name="inp_appointment_nature">
-                                    <option>General Check Up</option>
-                                    <option>Tooth Filling</option>
-                                    <option>Crown and Bridges</option>
-                                    <option>Dental Implant</option>
-                                    <option>Extraction</option>
-                                    <option>Invisalign</option>
-                                    <option>Damon Braces</option>
-                                    <option>Porcelain Veneer</option>
-                                    <option>Root Canal Treatment</option>
-                                    <option>Teeth Whitening</option>
-                                    <option>Child Dentistry</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <hr class="appointment-hr"/>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -151,6 +168,7 @@
                 <li data-target="#carouselTreatment" data-slide-to="6"></li>
                 <li data-target="#carouselTreatment" data-slide-to="7"></li>
                 <li data-target="#carouselTreatment" data-slide-to="8"></li>
+                <li data-target="#carouselTreatment" data-slide-to="9"></li>
             </ol>
             <!-- Carousel items -->
             <div class="carousel-inner">
@@ -256,6 +274,36 @@
                                     <ul class="treatment-item-list">
                                         <li><span class="treatment-item-list-title">Teeth Whitening</span> : Teeth whitening or bleaching is a simple, non-invasive dental treatment used to change the color of natural tooth enamel and is an ideal way to enhance the brilliance of your smile.</li>
                                         <li><span class="treatment-item-list-title">Porcelain Veneers</span>  : are thin layer of porcelain that are bonded to the front surface of a tooth, to change their appearance and function. Veneers can be used to change the size, colour, shape and close space between teeth.</li>
+                                        <li><span class="treatment-item-list-title">...</span></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="treatment-title">
+                            Treatment
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-Esthetic-Dentistry.png"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                    <div style="width:100%; height: 60px;"></div>
+                                    <div class="treatment-item-title">Esthetic Dentistry
+                                        <br/>
+                                        <p class="treatment-item-title-small">A smile makeover is where dental expertise meets art. A smile makeover will improve the appearance of your smile through one or more esthetic dental procedure such as veneers, teeth whitening and gum contouring.</p>
+                                    </div>
+                                    <ul class="treatment-item-list">
+                                        <li><span class="treatment-item-list-title">...</span></li>
                                         <li><span class="treatment-item-list-title">Tooth Colored Filling</span>  : a filling made of composite (tooth colored) used to repair a tooth that is affected by decay, caries, cracks, fractures or sometimes to improve the color and esthetics of a tooth.</li>
                                         <li><span class="treatment-item-list-title">Gum Counturing</span> : If you are unhappy with your smile, or if you feel that your gums is too low or too high, you may be need a gum contouring. This dental procedure can even out an uneven gum line and give you a smile you can be proud of.</li>
 
@@ -442,7 +490,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="position: relative;">
                         <img style="width: 100%;" src="images/home/contact-maps-mask.png"/>
-                        <iframe style="position: absolute; width:100%; height:100%; top:0; left:0;" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=elite%20dental%20clinic&key=AIzaSyBZAx18fPZ10Mc9ajbnlh3jPbHqPEVbRx0"></iframe>
+                        <iframe style="position: absolute; width:100%; height:100%; top:0; left:0; border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=elite%20dental%20clinic&key=AIzaSyBZAx18fPZ10Mc9ajbnlh3jPbHqPEVbRx0"></iframe>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%; height: 100px;"></div>
                 </div>
@@ -466,4 +514,31 @@
             appointment_dropdown=0;
         }
     });
+    $('.alert').hide();
+    //    appointment form script
+        $.validate({
+            onSuccess : function() {
+//                var dataString = 'name='+ name + '&email=' + email + '&phone=' + phone;
+                var dataString = $('#form-submit-appointment').serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "controller/cn_setAppointment.php",
+                    data: dataString,
+                    success: function(data) {
+                        console.log(data);
+                    }
+                });
+                $('.alert-success').fadeIn(300);
+                setTimeout(function() {
+                    $('.alert-success').fadeOut(300);
+                },3000);
+                return false;
+            }
+        });
+
+//        $('#submit-appointment').click(function() {
+//            alert('test');
+//        });
+
+    //    end appointment form script
 </script>

@@ -5,6 +5,7 @@
  * Date: 18/01/2015
  * Time: 17:53
  */
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -29,12 +30,13 @@
     <!-- <footer ng-include="'templates/footer.php'"></footer> -->
 
 
-    <script src="js/jquery-1.11.2.min.js"></script>
 
+    <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/angular-ui-router.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.47/jquery.form-validator.min.js"></script>
 
     <script src="js/main.js"></script>
     <script src="controller/cn_home.js"></script>
