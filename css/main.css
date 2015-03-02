@@ -126,6 +126,54 @@
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
+.animated-view.well{
+    /*height: 65px;*/
+}
+
+.ui-view-container {
+    position: relative;
+}
+
+.animated-view.ng-enter, .animated-view.ng-leave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+
+.animated-view.ng-enter {
+    opacity: 0;
+    -webkit-transform:scale3d(0.5, 0.5, 0.5);
+    -moz-transform:scale3d(0.5, 0.5, 0.5);
+    transform:scale3d(0.5, 0.5, 0.5);
+}
+
+.animated-view.ng-enter-active {
+    opacity: 1;
+    -webkit-transform:scale3d(1, 1, 1);
+    -moz-transform:scale3d(1, 1, 1);
+    transform:scale3d(1, 1, 1);
+}
+
+.animated-view.ng-leave {
+    opacity: 1;
+    /*padding-left: 0px;*/
+    -webkit-transform:translate3d(0, 0, 0);
+    -moz-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+}
+
+.animated-view.ng-leave-active {
+    opacity: 0;
+    /*padding-left: 100px;*/
+    -webkit-transform:translate3d(100px, 0, 0);
+    -moz-transform:translate3d(100px, 0, 0);
+    transform:translate3d(100px, 0, 0);
+}
+
 /* ---------------------------- section : aboutus ---------------------------- */
 #aboutus {
     position:relative;
@@ -608,6 +656,51 @@
     vertical-align: middle;
     padding: 5px 10px;
 }
+
+.bottom-footer {
+    position: fixed;
+    width: 100%;
+    height: 82px;
+    bottom:0;
+    left:0;
+    text-align: center;
+    line-height: 82px;
+    background-color: #2686bf;
+}
+
+.inside-footer {
+    display: inline-block;
+    font-family: klavika-m;
+    font-weight: bold;
+    font-size: 26px;
+    color: #FFF;
+    line-height: 82px;
+}
+
+.footer-text {
+    display: inline-block;
+    line-height: 40px;
+}
+
+.fb-logo, .twitter-logo {
+    display: inline-block;
+    width: 46px;
+    height: 40px;
+    margin: 0px 5px;
+    background-image:url("../images/footer-logo.png");
+    background-repeat: no-repeat;
+    line-height: 45px;
+}
+
+.fb-logo {
+    background-position: 0px 0px;
+}
+
+.twitter-logo {
+    background-position: -60px 0px;
+}
+
+
 
 /* ------------------------ end section : contact ------------------------ */
 

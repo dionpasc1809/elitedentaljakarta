@@ -5,7 +5,7 @@
                 <li class="li-logo-img"><img class="logo-img" src="images/home/logo.png"/></li>
                 <a ui-sref="home" onclick="navigateSlide('home');"><li>Home</li></a>
                 <a ui-sref="home" onclick="navigateSlide('aboutus');"><li>About Us</li></a>
-                <a ui-sref="home"><li>The Doctors</li></a>
+                <a ui-sref="doctors"><li>The Doctors</li></a>
                 <a ui-sref="home" onclick="navigateSlide('treatment');"><li>Treatment</li></a>
                 <a ui-sref="home" onclick="navigateSlide('contact');"><li>Contact</li></a>
             </ul>
