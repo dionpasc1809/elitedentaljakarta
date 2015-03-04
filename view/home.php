@@ -466,31 +466,39 @@
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%; height: 100px;"></div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="contact-title">
-                            Contact Us
+                        <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="contact-title">
+                                Contact Us
+                            </div>
+                            <table class="contact-table">
+                                <tr>
+                                    <td><img src="images/home/icon-address.png"/></td>
+                                    <td>JL. Radio Dalam Raya No. 61C, Kebayoran Baru, Jakarta Selatan</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/home/icon-phone.png"/></td>
+                                    <td>021 724 6706  / 0812 9839 0818</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/home/icon-email.png"/></td>
+                                    <td>elitedental.jakarta@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/home/icon-office-hours.png"/></td>
+                                    <td>Senin – Sabtu pk 10.00 – 20.00</td>
+                                </tr>
+                            </table>
                         </div>
-                        <table class="contact-table">
-                            <tr>
-                                <td><img src="images/home/icon-address.png"/></td>
-                                <td>JL. Radio Dalam Raya No. 61C, Kebayoran Baru, Jakarta Selatan</td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/home/icon-phone.png"/></td>
-                                <td>021 724 6706  / 0812 9839 0818</td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/home/icon-email.png"/></td>
-                                <td>elitedental.jakarta@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/home/icon-office-hours.png"/></td>
-                                <td>Senin – Sabtu pk 10.00 – 20.00</td>
-                            </tr>
-                        </table>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="position: relative;">
-                        <img style="width: 100%;" src="images/home/contact-maps-mask.png"/>
-                        <iframe style="position: absolute; width:100%; height:100%; top:0; left:0; border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=elite%20dental%20clinic&key=AIzaSyBZAx18fPZ10Mc9ajbnlh3jPbHqPEVbRx0"></iframe>
+
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="position: relative;">
+                            <img style="width: 100%;" src="images/home/contact-maps-mask.png"/>
+                            <iframe style="position: absolute; width:100%; height:100%; top:0; left:0; border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=elite%20dental%20clinic&key=AIzaSyBZAx18fPZ10Mc9ajbnlh3jPbHqPEVbRx0"></iframe>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%; height: 100px;"></div>
                 </div>
