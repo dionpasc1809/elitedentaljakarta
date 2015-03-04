@@ -274,7 +274,7 @@
                                     <ul class="treatment-item-list">
                                         <li><span class="treatment-item-list-title">Teeth Whitening</span> : Teeth whitening or bleaching is a simple, non-invasive dental treatment used to change the color of natural tooth enamel and is an ideal way to enhance the brilliance of your smile.</li>
                                         <li><span class="treatment-item-list-title">Porcelain Veneers</span>  : are thin layer of porcelain that are bonded to the front surface of a tooth, to change their appearance and function. Veneers can be used to change the size, colour, shape and close space between teeth.</li>
-                                        <li><span class="treatment-item-list-title">...</span></li>
+                                        <li><span class="treatment-item-list-title">... (continues next)</span></li>
 
                                     </ul>
                                 </div>
@@ -303,7 +303,6 @@
                                         <p class="treatment-item-title-small">A smile makeover is where dental expertise meets art. A smile makeover will improve the appearance of your smile through one or more esthetic dental procedure such as veneers, teeth whitening and gum contouring.</p>
                                     </div>
                                     <ul class="treatment-item-list">
-                                        <li><span class="treatment-item-list-title">...</span></li>
                                         <li><span class="treatment-item-list-title">Tooth Colored Filling</span>  : a filling made of composite (tooth colored) used to repair a tooth that is affected by decay, caries, cracks, fractures or sometimes to improve the color and esthetics of a tooth.</li>
                                         <li><span class="treatment-item-list-title">Gum Counturing</span> : If you are unhappy with your smile, or if you feel that your gums is too low or too high, you may be need a gum contouring. This dental procedure can even out an uneven gum line and give you a smile you can be proud of.</li>
 
@@ -437,9 +436,9 @@
                                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                     <div style="width:100%; height: 60px;"></div>
                                     <div class="treatment-item-title">Full Mouth Rehabilitation</div>
-                                    <!--<ul class="treatment-item-list">
-                                        <li></li>
-                                    </ul>-->
+                                    <ul class="treatment-item-list">
+                                        <li>Dental treatment procedure that will creates a beautiful, healthy and functional smiles. Typically involves general or restorative dentists (performing procedures like crowns, bridges and veneers), and can incorporate dental specialists like periodontists (specializing in the gums), oral surgeons, orthodontists (specializing in tooth movements and positions) and endodontists (specializing in the tooth pulp)</li>
+                                    </ul>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
                             </div>
@@ -503,6 +502,13 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%; height: 100px;"></div>
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+            </div>
+        </div>
+        <div class="bottom-footer" style="display: none;">
+            <div class="inside-footer">
+                <div class="footer-text">Like / Follow us on :</div>
+                <div class="fb-logo">&nbsp;</div>
+                <div class="twitter-logo">&nbsp;</div>
             </div>
         </div>
     </section>
