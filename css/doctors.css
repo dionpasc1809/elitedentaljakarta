@@ -9,3 +9,53 @@
     background-repeat: no-repeat;
     background-position: top center;
 }
+
+.doctor-head {
+    width: 100%;
+    min-height: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.doctor-logo {
+    display: inline-block;
+    float:left;
+}
+
+.doctor-logo img {
+    height: 100px;
+}
+
+.doctor-head-title {
+    display: inline-block;
+    float:right;
+    font-family: klavika-l;
+    color: #2686bf;
+    font-size: 46px;
+    line-height: 100px;
+}
+
+.doctor-content {
+    margin-top: 50px;
+}
+
+.doctor-outside-item {
+    padding: 20px 50px;
+}
+
+.doctor-item {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #2686bf;
+}
+
+.doctor-item img.doctor-item-photo {
+    width: 100%;
+}
+
+.doctor-btn {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: 10px 0px;
+}
