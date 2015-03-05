@@ -485,7 +485,7 @@
                                 </tr>
                                 <tr>
                                     <td><img src="images/home/icon-office-hours.png"/></td>
-                                    <td>Senin – Sabtu pk 10.00 – 20.00</td>
+                                    <td>Monday - Saturday, 10.00 AM to 8.00 PM</td>
                                 </tr>
                             </table>
                         </div>
