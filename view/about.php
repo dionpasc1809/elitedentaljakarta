@@ -1,3 +1,9 @@
+<?php
+include("../lib/meekrodb.2.3.class.php");
+
+$doctors = DB::query("SELECT * FROM tb_doctors");
+
+?>
 <div id="thedoctors">
     <section id="doctor-container">
         <div class="container">
@@ -12,18 +18,20 @@
             </div>
             <div class="doctor-content">
                 <div class="row">
+                    <?php foreach($doctors as $d): ?>
                     <div class="col-sm-4">
                         <div class="doctor-outside-item">
                             <div class="doctor-item">
-                                <img class="doctor-item-photo" src="images/doctors/photos/drg-niken.jpg"/>
+                                <img class="doctor-item-photo" src="<?php echo $d['small_image']; ?>"/>
                                 <div class="doctor-btn">
-                                    <a href="#" data-doctor="niken"><img src="images/doctors/btn-lup.png"/></a>
+                                    <a href="#" data-doctor="<?php echo $d['tag']; ?>"><img src="images/doctors/btn-lup.png"/></a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <?php endforeach; ?>
 
-                    <div class="col-sm-4">
+                    <!--<div class="col-sm-4">
                         <div class="doctor-outside-item">
                             <div class="doctor-item">
                                 <img class="doctor-item-photo" src="images/doctors/photos/drg-putut.jpg"/>
@@ -76,7 +84,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
 
@@ -93,6 +101,7 @@
                         <div class="modal-body">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
                             Add some text here
+                            <div class="data-doctors"></div>
                         </div>
                         <!--<div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -106,6 +115,17 @@
     <script type="text/javascript">
         $('.doctor-btn a').click(function(e) {
             var doctor_attr = $(this).attr('data-doctor');
+            $.ajax({
+                type: "POST",
+                url: "controller/cn_getDoctors.php",
+                data: { tag : doctor_attr },
+                dataType : 'json',
+                success: function(data) {
+//                    $('.data-doctors').append(data);
+                    console.log(data);
+                }
+            });
+
 //            $('#popupDoctors .modal-header .modal-title').html(doctor_attr);
             $('#popupDoctors').modal('show');
             e.preventDefault();

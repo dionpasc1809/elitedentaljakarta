@@ -19,10 +19,16 @@
 
 class DB {
   // initial connection
-  public static $dbName = '';
-  public static $user = '';
+  public static $dbName = 'elitedentaljakarta';
+  public static $user = 'root';
   public static $password = '';
   public static $host = 'localhost';
+
+//  public static $dbName = 'elitedentaljakarta';
+//  public static $user = 'root';
+//  public static $password = '';
+//  public static $host = 'localhost';
+
   public static $port = null;
   public static $encoding = 'latin1';
   
