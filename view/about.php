@@ -4,6 +4,7 @@ include("../lib/meekrodb.2.3.class.php");
 $doctors = DB::query("SELECT * FROM tb_doctors");
 
 ?>
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
 <div id="thedoctors">
     <section id="doctor-container">
         <div class="container">
@@ -100,8 +101,15 @@ $doctors = DB::query("SELECT * FROM tb_doctors");
                         </div>-->
                         <div class="modal-body">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
-                            Add some text here
-                            <div class="data-doctors"></div>
+                            <div class="data-doctors">
+                                <img src="#" class="data-doctor-imgbig"/>
+                                <div class="data-doctor-name">
+
+                                </div>
+                                <div class="data-doctor-desc">
+
+                                </div>
+                            </div>
                         </div>
                         <!--<div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -112,9 +120,14 @@ $doctors = DB::query("SELECT * FROM tb_doctors");
             </div>
         </div>
     </section>
+
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
     <script type="text/javascript">
         $('.doctor-btn a').click(function(e) {
             var doctor_attr = $(this).attr('data-doctor');
+//            $('#popupDoctors .modal-header .modal-title').html(doctor_attr);
+            $('#popupDoctors').modal('show');
             $.ajax({
                 type: "POST",
                 url: "controller/cn_getDoctors.php",
@@ -123,11 +136,13 @@ $doctors = DB::query("SELECT * FROM tb_doctors");
                 success: function(data) {
 //                    $('.data-doctors').append(data);
                     console.log(data);
+                    data = data[0];
+                    $('#popupDoctors .data-doctors .data-doctor-imgbig').attr('src',""+data['image']);
+                    $('#popupDoctors .data-doctors .data-doctor-name').html(data['name']);
+                    $('#popupDoctors .data-doctors .data-doctor-desc').html(data['description']);
                 }
             });
-
-//            $('#popupDoctors .modal-header .modal-title').html(doctor_attr);
-            $('#popupDoctors').modal('show');
+            $("#popupDoctors .data-doctors .data-doctor-desc").mCustomScrollbar({ theme : "elitedc" });
             e.preventDefault();
         });
     </script>
