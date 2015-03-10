@@ -107,7 +107,7 @@ $doctors = DB::query("SELECT * FROM tb_doctors");
 
                                 </div>
                                 <div class="data-doctor-desc">
-
+                                    <div class="data-content"></div>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,6 @@ $doctors = DB::query("SELECT * FROM tb_doctors");
         $('.doctor-btn a').click(function(e) {
             var doctor_attr = $(this).attr('data-doctor');
 //            $('#popupDoctors .modal-header .modal-title').html(doctor_attr);
-            $('#popupDoctors').modal('show');
             $.ajax({
                 type: "POST",
                 url: "controller/cn_getDoctors.php",
@@ -139,10 +138,11 @@ $doctors = DB::query("SELECT * FROM tb_doctors");
                     data = data[0];
                     $('#popupDoctors .data-doctors .data-doctor-imgbig').attr('src',""+data['image']);
                     $('#popupDoctors .data-doctors .data-doctor-name').html(data['name']);
-                    $('#popupDoctors .data-doctors .data-doctor-desc').html(data['description']);
+                    $('#popupDoctors .data-doctors .data-doctor-desc .data-content').html(data['description']);
                 }
             });
             $("#popupDoctors .data-doctors .data-doctor-desc").mCustomScrollbar({ theme : "elitedc" });
+            $('#popupDoctors').modal('show');
             e.preventDefault();
         });
     </script>

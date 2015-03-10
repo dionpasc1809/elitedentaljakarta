@@ -9,7 +9,7 @@
 include("../lib/meekrodb.2.3.class.php");
 
 
-$_POST['tag']=$_GET['id'];
+//$_POST['tag']=$_GET['id'];
 
 if(isset($_POST['tag']))
 {
