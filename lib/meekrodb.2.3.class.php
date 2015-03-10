@@ -19,9 +19,9 @@
 
 class DB {
   // initial connection
-  public static $dbName = 'elitedentaljakarta';
-  public static $user = 'root';
-  public static $password = '';
+  public static $dbName = 'u0633340_elitedentaljakarta';
+  public static $user = 'u0633340_admin';
+  public static $password = 'hacker300z';
   public static $host = 'localhost';
 
 //  public static $dbName = 'elitedentaljakarta';

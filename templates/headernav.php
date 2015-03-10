@@ -18,6 +18,7 @@
                 <li data-target="#home-slider" data-slide-to="0" class="active"></li>
                 <li data-target="#home-slider" data-slide-to="1"></li>
                 <li data-target="#home-slider" data-slide-to="2"></li>
+                <li data-target="#home-slider" data-slide-to="3"></li>
             </ol>
             <!-- Carousel items -->
             <div class="carousel-inner">
@@ -29,6 +30,9 @@
                 </div>
                 <div class="item">
                     <img style="width:100%;" src="images/home/home-image-3.jpg"/>
+                </div>
+                <div class="item">
+                    <img style="width:100%;" src="images/home/home-image-4.jpg"/>
                 </div>
             </div>
             <!-- Carousel nav -->
