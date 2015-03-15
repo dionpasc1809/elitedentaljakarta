@@ -503,12 +503,33 @@
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
             </div>
+
         </div>
         <div class="bottom-footer" style="display: none;">
             <div class="inside-footer">
                 <div class="footer-text">Like / Follow us on :</div>
                 <div class="fb-logo">&nbsp;</div>
                 <div class="twitter-logo">&nbsp;</div>
+            </div>
+            <div class="popout-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6">
+                            <div class="fb-like" data-share="true" data-width="360" data-show-faces="true">&nbsp;</div>
+                        </div>
+                        <div class="col-sm-3"></div>
+                        <!--<div class="col-sm-6">
+                            <a class="twitter-follow-button"
+                               href="https://twitter.com/twitter"
+                               data-show-count="false"
+                               data-size="large">
+                                Follow @twitter
+                            </a>
+                            <script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));</script>
+                        </div>-->
+                    </div>
+                </div>
             </div>
         </div>
     </section>

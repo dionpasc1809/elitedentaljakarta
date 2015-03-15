@@ -26,13 +26,15 @@
                     <img style="width:100%;" src="images/home/home-image.jpg"/>
                 </div>
                 <div class="item">
-                    <img style="width:100%;" src="images/home/home-image-2.jpg"/>
-                </div>
-                <div class="item">
-                    <img style="width:100%;" src="images/home/home-image-3.jpg"/>
-                </div>
-                <div class="item">
                     <img style="width:100%;" src="images/home/home-image-4.jpg"/>
+                </div>
+                <div class="item">
+                    <div style="width: 100%; height:483px; text-align: center;">
+                        <iframe style="display:inline-block;" width="600" height="378" scrolling="no" frameborder="0" src="http://damonbraces.com/promo/damon-clear/whos-wearing-damon-clear.php"></iframe>
+                    </div>
+                </div>
+                <div class="item">
+                    <img style="width:100%;" src="images/home/home-image-2.jpg"/>
                 </div>
             </div>
             <!-- Carousel nav -->
