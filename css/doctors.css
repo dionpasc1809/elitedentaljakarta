@@ -45,12 +45,35 @@
 
 .doctor-item {
     display: inline-block;
+    position: relative;
     width: 100%;
     border: 1px solid #2686bf;
 }
 
 .doctor-item img.doctor-item-photo {
     width: 100%;
+}
+
+.doctor-item-small-role {
+    position: absolute;
+    top:0; left:0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    color: #FFF;
+    font-family: klavika-l;
+    font-size: 18px;
+    text-align: center;
+}
+
+.doctor-item-small-title {
+    position: absolute;
+    bottom:67px; left:0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    color: #FFF;
+    font-family: klavika-l;
+    font-size: 18px;
+    text-align: center;
 }
 
 .doctor-btn {

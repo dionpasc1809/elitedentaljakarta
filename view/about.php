@@ -24,6 +24,14 @@ $doctors = DB::query("SELECT * FROM tb_doctors");
                         <div class="doctor-outside-item">
                             <div class="doctor-item">
                                 <img class="doctor-item-photo" src="<?php echo $d['small_image']; ?>"/>
+                                <div class="doctor-item-small-role">
+                                    <?php echo $d['small_role']; ?>
+                                </div>
+
+                                <div class="doctor-item-small-title">
+                                    <?php echo $d['name']; ?>
+                                </div>
+
                                 <div class="doctor-btn">
                                     <a href="#" data-doctor="<?php echo $d['tag']; ?>"><img src="images/doctors/btn-lup.png"/></a>
                                 </div>
@@ -139,11 +147,18 @@ $doctors = DB::query("SELECT * FROM tb_doctors");
                     $('#popupDoctors .data-doctors .data-doctor-imgbig').attr('src',""+data['image']);
                     $('#popupDoctors .data-doctors .data-doctor-name').html(data['name']);
                     $('#popupDoctors .data-doctors .data-doctor-desc .data-content').html(data['description']);
+                    $("#popupDoctors .data-doctors .data-doctor-desc").mCustomScrollbar({ theme : "elitedc" });
+                    $('#popupDoctors').modal('show');
                 }
             });
-            $("#popupDoctors .data-doctors .data-doctor-desc").mCustomScrollbar({ theme : "elitedc" });
-            $('#popupDoctors').modal('show');
+
             e.preventDefault();
         });
+
+        $('#popupDoctors').on('hidden.bs.modal', function () {
+            $('#popupDoctors .data-doctors .data-doctor-imgbig').attr('src',"#");
+            $('#popupDoctors .data-doctors .data-doctor-name').html("");
+            $('#popupDoctors .data-doctors .data-doctor-desc .data-content').html("");
+        })
     </script>
 </div>
