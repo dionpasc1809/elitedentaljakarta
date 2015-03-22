@@ -1,12 +1,21 @@
-<h1>Appointment Data</h1>
+<?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: godhepaer
+ * Date: 3/22/2015
+ * Time: 9:43 PM
+ */
+?>
+
+<h1>Doctors Data</h1>
 <br/>
 <style>
     .ngViewport.ng-scope {
-        height: auto !important;
+    height: auto !important;
         max-height: 500px;
     }
     .peopleNameFilter {
-        height:auto !important;
+    height:auto !important;
     }
 </style>
 <script type="text/javascript">
@@ -14,26 +23,26 @@
 
     app.factory('GridService', ['$http', '$q',
         function($http, $q) {
-            var contributorsFile = 'appointment/get';
+            var contributorsFile = 'doctors/get';
             var contributors = [];
 
             function getContributors() {
                 var deferred = $q.defer();
 
                 $http.get(contributorsFile)
-                    .then(function(result) {
-                        contributors = result.data;
-                        deferred.resolve(contributors);
-                    }, function(error) {
-                        deferred.reject(error);
-                    });
+                .then(function(result) {
+                    contributors = result.data;
+                    deferred.resolve(contributors);
+                }, function(error) {
+                    deferred.reject(error);
+                });
 
                 return deferred.promise;
             }
 
             function saveContributor(contributor) {
                 var data_contributor = JSON.stringify( contributor );
-                $http.post('admin/appointment/set', { postdata:data_contributor }).success(function(data) {
+                $http.post('admin/doctors/set', { postdata:data_contributor }).success(function(data) {
                     console.log("SAVE success !!!!");
                     console.log(data);
                     console.log(data_contributor);
@@ -79,18 +88,16 @@
             multiSelect:false,
             columnDefs: [
                 {field:'id', displayName: 'No.', width: 35},
-                {field:'name', displayName:'Name', width: 150},
-                {field:'email', displayName:'Email', width: 150},
-                {field:'phone', displayName:'Phone Number', width: 150},
-                {field:'address', displayName:'Address', width:200},
-                {field:'city', displayName:'City', width: 150/*, cellTemplate:'<div> <div class="ngCellText" style="text-align: center;">{{row.getProperty(col.field)}}</div> </div>'*/},
-                {field:'state', displayName:'State', width: 150},
-                {field:'appointment_day', displayName:'Appointment Day', width: 150},
-                {field:'appointment_time', displayName:'Appointment Time', width: 150},
-                {field:'appointment_nature', displayName:'Appointment Nature', width: 150},
-                {field:'status', displayName:'Status', width: 120},
-                {field:'create_date', displayName:'Submitted At', width: 150},
-                {field:'option', displayName:'Option', width: 200, cellTemplate: '<div> <div class="ngCellText" style="text-align:center;"><input type="button" class="btn btn-danger inp_delete" value="Delete" data-description="" ng-click="foo({{row.getProperty(col.field)}})" style="padding: 0px 5px;"/> <a href="<?php echo site_url('admin/appointment/edit'); ?>/{{row.getProperty(col.field)}}"><input type="button" class="btn btn-warning" value="Edit" style="padding: 0px 5px;"/></a> </div> </div>'},
+                {field:'tag', displayName:'Tag Name', width: 150},
+                {field:'name', displayName:'Full Name', width: 150},
+                {field:'image', displayName:'Image Link', width: 150},
+                {field:'small_image', displayName:'Thumbnail Image', width:200},
+                {field:'small_title', displayName:'Thumbnail Title', width: 150/*, cellTemplate:'<div> <div class="ngCellText" style="text-align: center;">{{row.getProperty(col.field)}}</div> </div>'*/},
+                {field:'small_role', displayName:'Thumbnail Role', width: 150},
+                {field:'description', displayName:'Description', width: 150},
+                /*{field:'option', displayName:'Option', width: 200, cellTemplate: '<div> <div class="ngCellText" style="text-align:center;"><input type="button" class="btn btn-danger inp_delete" value="Delete" data-description="" ng-click="foo({{row.getProperty(col.field)}})" style="padding: 0px 5px;"/> <a href="http://lol.garena.co.id/eventtracking/staff/otpconfirmation.php?id={{row.getProperty(col.field)}}"><input type="button" class="btn btn-warning" value="OTP Confirmation" style="padding: 0px 5px;"/></a> </div> </div>'},*/
+
+
                 /*{field:'otp_status', displayName:'Status OTP', width: 100, cellTemplate:'<div ng-class="{green: row.getProperty(col.field) == 1}" class="red"> <div class="ngCellText" style="text-align:center;">{{row.getProperty(col.field)}}</div></div>', enableCellEdit: true},*/
                 /*{field:'delete', displayName: 'Option', enableCellEdit: false, width: 300, cellTemplate: '<div> <div class="ngCellText" style="text-align:center;"><input type="button" class="btn btn-danger inp_delete" value="Delete" data-description="" ng-click="foo({{row.getProperty(col.field)}})" style="padding: 0px 5px;"/> <a href="http://lol.garena.co.id/eventtracking/staff/otpconfirmation.php?id={{row.getProperty(col.field)}}"><input type="button" class="btn btn-warning" value="OTP Confirmation" style="padding: 0px 5px;"/></a> <a href="http://lol.garena.co.id/eventtracking/staff/controller/cn_resendotp.php?id={{row.getProperty(col.field)}}"><input type="button" class="btn btn-info" value="Send OTP" style="padding: 0px 5px;"/></a> </div> </div>'}*/
             ],
@@ -132,17 +139,14 @@
 <div ng-app="adminApp">
     <div ng-controller="HomeController">
         <select id="filterBy" name="filterBy" ng-model="filterBy" ng-change="filterName()">
-            <option value="id">No</option>
-            <option value="name">Name</option>
-            <option value="email">Email</option>
-            <option value="phone">Phone</option>
-            <option value="address">Address</option>
-            <option value="city">City</option>
-            <option value="state">State</option>
-            <option value="appointment_day">Appointment Day</option>
-            <option value="appointment_time">Appointment Time</option>
-            <option value="appointment_nature">Appointment Nature</option>
-            <option value="status">Status</option>
+            <option value="id">No.</option>
+            <option value="tag">Tag Name</option>
+            <option value="name">Full Name</option>
+            <option value="image">Image Link</option>
+            <option value="small_image">Thumbnail Image</option>
+            <option value="small_title">Thumbnail Title</option>
+            <option value="small_role">Thumbnail Role</option>
+            <option value="description">Description</option>
         </select>
         <input class="peopleNameFilter form-control" id="personNameFilter" type="text" ng-model="nameFilter" placeholder="Filter" ng-change="filterName()">
         <div class="gridStyle" ng-grid="gridOptions"></div>
@@ -165,22 +169,22 @@
             </thead>
             <tbody>
             <?php /*foreach($appointment as $ap): */?>
-                <tr>
-                    <td><?php /*echo $ap->id; */?></td>
-                    <td><?php /*echo $ap->name; */?></td>
-                    <td><?php /*echo $ap->email; */?></td>
-                    <td><?php /*echo $ap->phone; */?></td>
-                    <td><?php /*echo $ap->address; */?></td>
-                    <td><?php /*echo $ap->city; */?></td>
-                    <td><?php /*echo $ap->state; */?></td>
-                    <td><?php /*echo $ap->appointment_day; */?></td>
-                    <td><?php /*echo $ap->appointment_time; */?></td>
-                    <td><?php /*echo $ap->appointment_nature; */?></td>
-                    <td><?php /*echo $ap->status; */?></td>
-                    <td><?php /*echo $ap->create_date; */?></td>
-                </tr>
-            <?php /*endforeach; */?>
-            </tbody>
-        </table>-->
-    </div>
+<tr>
+    <td><?php /*echo $ap->id; */?></td>
+    <td><?php /*echo $ap->name; */?></td>
+    <td><?php /*echo $ap->email; */?></td>
+    <td><?php /*echo $ap->phone; */?></td>
+    <td><?php /*echo $ap->address; */?></td>
+    <td><?php /*echo $ap->city; */?></td>
+    <td><?php /*echo $ap->state; */?></td>
+    <td><?php /*echo $ap->appointment_day; */?></td>
+    <td><?php /*echo $ap->appointment_time; */?></td>
+    <td><?php /*echo $ap->appointment_nature; */?></td>
+    <td><?php /*echo $ap->status; */?></td>
+    <td><?php /*echo $ap->create_date; */?></td>
+</tr>
+<?php /*endforeach; */?>
+</tbody>
+</table>-->
+</div>
 </div>

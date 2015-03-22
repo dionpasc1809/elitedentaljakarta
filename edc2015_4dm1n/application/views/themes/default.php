@@ -35,7 +35,7 @@
 ?>
 
     <!-- Le styles -->
-    <link href="<?php echo base_url(); ?>assets/themes/default/hero_files/bootstrap.css" rel="stylesheet">
+    <!--<link href="<?php /*echo base_url(); */?>assets/themes/default/hero_files/bootstrap.css" rel="stylesheet">-->
     <link href="<?php echo base_url(); ?>assets/themes/default/hero_files/bootstrap-responsive.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/themes/default/css/general.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/themes/default/css/custom.css" rel="stylesheet">
@@ -113,32 +113,33 @@
 
   <body>
 
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <img src="<?php echo base_url(); ?>assets/themes/default/images/logo.png" style="float:left;margin-top:5px;z-index:5" alt="logo"/>
-          <a class="brand" href="<?php echo site_url(); ?>">&nbsp;&nbsp;Elite Dental Jakarta</a>
-          <div style="height: 0px;" class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="<?php echo site_url('admin'); ?>">Home</a></li>
-			  <li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Appointment <b class="caret"></b></a>
-				  <ul class="dropdown-menu">
-					  <li><a href="<?php echo site_url('admin/index'); ?>">Edit</a></li>
-				  </ul>
-			  </li>
-            </ul>
-          </div><!--/.nav-collapse -->
+			<div class="navbar-header">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<img src="<?php echo base_url(); ?>assets/themes/default/images/logo.png" style="float:left;margin-top:5px;z-index:5" alt="logo"/>
+				<a class="navbar-brand" href="<?php echo site_url(); ?>">&nbsp;&nbsp;Elite Dental Jakarta</a>
+			</div>
+			<div>
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="<?php echo site_url('admin/appointment'); ?>">Appointment</a>
+					</li>
+					<li>
+						<a href="<?php echo site_url('admin/doctors'); ?>">Doctors</a>
+					</li>
+				</ul>
+			</div>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="margin-top: 60px;">
     <?php if($this->load->get_section('text_header') != '') { ?>
     	<h1><?php echo $this->load->get_section('text_header');?></h1>
     <?php }?>
@@ -149,11 +150,11 @@
       <hr/>
 
       <footer>
-      	<div class="row">
+      	<!--<div class="row">
 	        <div class="span6 b10">
-				Copyright &copy; <a target="_blank" href="https://plus.google.com/u/0/107789497808468736690?rel=author">John Skoumbourdis</a> | <a target="_blank" href="http://www.web-and-development.com">www.web-and-development.com</a>
+				Copyright &copy;
 	        </div>
-        </div>
+        </div>-->
       </footer>
 
     </div> <!-- /container -->

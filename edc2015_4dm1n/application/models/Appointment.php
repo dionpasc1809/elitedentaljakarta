@@ -12,4 +12,9 @@ class Appointment extends CI_Model {
         return $this->db->get($this->_table_name)->result();
     }
 
+    function get_by_id($id) {
+        $this->db->where('id',$id);
+        return $this->db->get($this->_table_name)->result();
+    }
+
 }

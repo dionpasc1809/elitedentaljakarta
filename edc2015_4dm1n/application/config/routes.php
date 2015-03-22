@@ -38,10 +38,20 @@
 |
 */
 
-$route['default_controller'] = "example";
+$route['default_controller'] = "admin/redirect";
 $route['404_override'] = '';
 
-$route['example'] = 'example/index';
+/*$route['example'] = 'example/index';*/
+
+$route['admin'] = 'admin/redirect';
+
+$route['admin/appointment'] = 'admin/index';
+$route['admin/appointment/edit/(:num)'] = 'admin/EditAppointment/$1';
+$route['admin/doctors'] = 'admin/doctors';
+
+// DATA binding
+$route['admin/appointment/get'] = 'data/getAppointment';
+$route['admin/doctors/get'] = 'data/getDoctors';
 
 
 /* End of file routes.php */
