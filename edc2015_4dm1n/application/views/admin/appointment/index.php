@@ -78,6 +78,7 @@
             enableCellEdit: false,
             multiSelect:false,
             columnDefs: [
+                {field:'option', displayName:'Option', width: 200, cellTemplate: '<div> <div class="ngCellText" style="text-align:center;"><a href="<?php echo site_url('admin/appointment/delete'); ?>/{{row.getProperty(col.field)}}"><input type="button" class="btn btn-danger inp_delete" value="Delete" data-description="{{row.getProperty(col.field)}}" style="padding: 0px 5px;"/></a> <a href="<?php echo site_url('admin/appointment/edit'); ?>/{{row.getProperty(col.field)}}"><input type="button" class="btn btn-warning" value="Edit" style="padding: 0px 5px;"/></a> </div> </div>',pinned:true},
                 {field:'id', displayName: 'No.', width: 35},
                 {field:'name', displayName:'Name', width: 150},
                 {field:'email', displayName:'Email', width: 150},
@@ -90,7 +91,6 @@
                 {field:'appointment_nature', displayName:'Appointment Nature', width: 150},
                 {field:'status', displayName:'Status', width: 120},
                 {field:'create_date', displayName:'Submitted At', width: 150},
-                {field:'option', displayName:'Option', width: 200, cellTemplate: '<div> <div class="ngCellText" style="text-align:center;"><input type="button" class="btn btn-danger inp_delete" value="Delete" data-description="" ng-click="foo({{row.getProperty(col.field)}})" style="padding: 0px 5px;"/> <a href="<?php echo site_url('admin/appointment/edit'); ?>/{{row.getProperty(col.field)}}"><input type="button" class="btn btn-warning" value="Edit" style="padding: 0px 5px;"/></a> </div> </div>'},
                 /*{field:'otp_status', displayName:'Status OTP', width: 100, cellTemplate:'<div ng-class="{green: row.getProperty(col.field) == 1}" class="red"> <div class="ngCellText" style="text-align:center;">{{row.getProperty(col.field)}}</div></div>', enableCellEdit: true},*/
                 /*{field:'delete', displayName: 'Option', enableCellEdit: false, width: 300, cellTemplate: '<div> <div class="ngCellText" style="text-align:center;"><input type="button" class="btn btn-danger inp_delete" value="Delete" data-description="" ng-click="foo({{row.getProperty(col.field)}})" style="padding: 0px 5px;"/> <a href="http://lol.garena.co.id/eventtracking/staff/otpconfirmation.php?id={{row.getProperty(col.field)}}"><input type="button" class="btn btn-warning" value="OTP Confirmation" style="padding: 0px 5px;"/></a> <a href="http://lol.garena.co.id/eventtracking/staff/controller/cn_resendotp.php?id={{row.getProperty(col.field)}}"><input type="button" class="btn btn-info" value="Send OTP" style="padding: 0px 5px;"/></a> </div> </div>'}*/
             ],
@@ -101,7 +101,9 @@
 
         $scope.foo = function(delete_id) {
             /*var delete_id=$(this).attr('data-description');*/
-            $('#confirmDelete .btn-delete-link').attr('href',"controller/cn_delete.php?id="+delete_id);
+//            alert("test");
+
+            $('#confirmDelete .btn-delete-link').attr('href',"delete/"+delete_id);
             $('#confirmDelete').modal("show");
         };
 
@@ -183,4 +185,44 @@
             </tbody>
         </table>-->
     </div>
+</div>
+
+<script type="text/javascript">
+    function
+
+    $('.inp_delete').click(function() {
+        var id_del = $(this).attr('data-description');
+        alert('test');
+//        $('#confirmDelete .btn-delete-link').attr('href',"delete/"+id_del);
+//        $('#confirmDelete').modal("show");
+    });
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="confirmDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Deleting Data..
+                </h4>
+            </div>
+            <div class="modal-body">
+                Are you sure to delete this appointment data
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button>
+                <a href="#" class="btn-delete-link">
+                    <button type="button" class="btn btn-primary">
+                        Submit changes
+                    </button>
+                </a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
 </div>

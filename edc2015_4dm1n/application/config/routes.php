@@ -47,7 +47,10 @@ $route['admin'] = 'admin/redirect';
 
 $route['admin/appointment'] = 'admin/index';
 $route['admin/appointment/edit/(:num)'] = 'admin/EditAppointment/$1';
+$route['admin/appointment/delete/(:num)'] = 'admin/deleteAppointment/$1';
+
 $route['admin/doctors'] = 'admin/doctors';
+$route['admin/doctors/edit/(:num)'] = 'admin/editDoctors/$1';
 
 // DATA binding
 $route['admin/appointment/get'] = 'data/getAppointment';

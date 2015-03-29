@@ -87,6 +87,8 @@
             enableCellEdit: false,
             multiSelect:false,
             columnDefs: [
+                {field:'option', displayName:'Option', width: 100, cellTemplate: '<div> <div class="ngCellText" style="text-align:center;"> <a href="<?php echo site_url('admin/doctors/edit'); ?>/{{row.getProperty(col.field)}}"><input type="button" class="btn btn-warning" value="Edit" style="padding: 0px 5px;"/></a> </div> </div>',pinned:true},
+                /* <a href="<?php /*echo site_url('admin/doctors/delete'); */?>/{{row.getProperty(col.field)}}"><input type="button" class="btn btn-danger inp_delete" value="Delete" data-description="{{row.getProperty(col.field)}}" style="padding: 0px 5px;"/></a> */
                 {field:'id', displayName: 'No.', width: 35},
                 {field:'tag', displayName:'Tag Name', width: 150},
                 {field:'name', displayName:'Full Name', width: 150},
