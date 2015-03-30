@@ -6,12 +6,23 @@
  * Time: 10:03 PM
  */
 ?>
-<style>
-    .app-no {
-        padding: 5px;
-        border:2px solid #4F5155;
-    }
-</style>
+    <style>
+        .app-no {
+            padding: 5px;
+            border:2px solid #4F5155;
+        }
+
+        .inp-guidelines {
+            color: #efab26;
+            font-style: italic;
+            margin-top:10px;
+            font-weight: bold;
+        }
+
+        .guide-b {
+            border-bottom: 1px solid #efab26;
+        }
+    </style>
 <h1>Edit Appointment Data</h1>
 <hr/>
 
@@ -22,6 +33,7 @@
                 &times;
             </a>
             <strong>Warning!</strong> There is some errors on your input.
+            <div><?php echo validation_errors(); ?></div>
         </div>
     </div>
 <?php elseif($success==true): ?>
@@ -88,7 +100,12 @@
 
 <div class="form-group">
     <label>Status</label>
-    <input class="form-control" type="text" id="inp_status" name="inp_status" placeholder="Input Name..." value="<?php echo $appointment->status; ?>"/>
+    <input class="form-control" type="text" id="inp_status" name="inp_status" placeholder="Input Status [approved] / [not-approved]" value="<?php echo $appointment->status; ?>"/>
+    <div class="inp-guidelines">
+        Please edit status...<br/>
+        "" (blank) => not yet approved,<br/>
+        "approved" => approved by admin
+    </div>
 </div>
 
 <div class="form-group" style="text-align: right;">

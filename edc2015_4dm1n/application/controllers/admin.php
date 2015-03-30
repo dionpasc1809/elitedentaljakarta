@@ -140,6 +140,75 @@ class Admin extends CI_Controller {
         $this->load->view('admin/doctors/edit',$var_data);
     }
 
+    public function promo() {
+        $app = new Promo();
+        $var_data = array();
+        $var_data['errors']=false;
+        $var_data['success']=false;
+
+        if($this->input->server('REQUEST_METHOD')=="POST"){
+            $this->form_validation->set_rules('inp_promo_name','[Promo Name]','required');
+            $this->form_validation->set_rules('inp_promo_image','[Promo Image]','required');
+            $postdata = $this->input->post();
+
+            if ($this->form_validation->run() == FALSE)
+            {
+                $var_data['errors']=true;
+            }
+            else
+            {
+                $var_data['success']=true;
+                date_default_timezone_set('Asia/Jakarta');
+                $this_date = date('Y-m-d H:i:s');
+
+                $var_postdata['promo_name'] = $postdata['inp_promo_name'];
+                $var_postdata['promo_image'] = $postdata['inp_promo_image'];
+                $var_postdata['promo_link'] = $postdata['inp_promo_link'];
+                $var_postdata['created_date'] = $this_date;
+                $var_postdata['modified_date'] = $this_date;
+
+                $app->save_new($var_postdata);
+            }
+        }
+
+        $var_data['promo']=$app->get_all();
+        $this->load->view('admin/promo/index',$var_data);
+    }
+
+    public function editPromo($id) {
+        $app = new Promo();
+        $var_data = array();
+        $var_data['errors']=false;
+        $var_data['success']=false;
+
+        if($this->input->server('REQUEST_METHOD')=="POST"){
+            $this->form_validation->set_rules('inp_promo_name','[Promo Name]','required');
+            $this->form_validation->set_rules('inp_promo_image','[Promo Image]','required');
+            $postdata = $this->input->post();
+
+            if ($this->form_validation->run() == FALSE)
+            {
+                $var_data['errors']=true;
+            }
+            else
+            {
+                $var_data['success']=true;
+                date_default_timezone_set('Asia/Jakarta');
+                $this_date = date('Y-m-d H:i:s');
+
+                $var_postdata['promo_name'] = $postdata['inp_promo_name'];
+                $var_postdata['promo_image'] = $postdata['inp_promo_image'];
+                $var_postdata['promo_link'] = $postdata['inp_promo_link'];
+                $var_postdata['modified_date'] = $this_date;
+
+                $app->save_edit($var_postdata,"id", $id);
+            }
+        }
+
+        $var_data['promo']=$app->get_by_id($id);
+        $this->load->view('admin/promo/edit',$var_data);
+    }
+
     public function redirect() {
         redirect('admin/appointment');
     }

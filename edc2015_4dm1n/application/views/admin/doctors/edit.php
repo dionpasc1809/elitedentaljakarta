@@ -23,8 +23,7 @@
             border-bottom: 1px solid #efab26;
         }
     </style>
-    <h1>Edit Appointment Data</h1>
-    <hr/>
+    <h1>Edit Doctors Data</h1>
 
 <?php if($errors==true): ?>
     <div class="form-group">
@@ -33,6 +32,7 @@
                 &times;
             </a>
             <strong>Warning!</strong> There is some errors on your input.
+            <div><?php echo validation_errors(); ?></div>
         </div>
     </div>
 <?php elseif($success==true): ?>
@@ -94,7 +94,7 @@
 
     <div class="form-group" style="text-align: right;">
         <a href="<?php echo site_url("admin/doctors"); ?>"><input type="button" class="btn btn-default" value="Back"/></a>
-        <input type="submit" class="btn btn-primary" value="Edit Appointment"/>
+        <input type="submit" class="btn btn-primary" value="Edit Doctors"/>
     </div>
 
 <?php echo form_close(); ?>

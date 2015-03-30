@@ -133,6 +133,9 @@
 					<li>
 						<a href="<?php echo site_url('admin/doctors'); ?>">Doctors</a>
 					</li>
+                    <li>
+                        <a href="<?php echo site_url('admin/promo'); ?>">Promo</a>
+                    </li>
 				</ul>
 			</div>
         </div>

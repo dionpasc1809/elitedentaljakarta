@@ -20,4 +20,10 @@ class Data extends CI_Controller {
         $app_data = $doctors->get_all();
         echo json_encode($app_data);
     }
+
+    public function getPromo() {
+        $promo = new Promo();
+        $app_data = $promo->get_all();
+        echo json_encode($app_data);
+    }
 }
