@@ -20,7 +20,7 @@ $doctors = DB::query("SELECT * FROM tb_doctors");
             <div class="doctor-content">
                 <div class="row">
                     <?php foreach($doctors as $d): ?>
-                    <div class="col-sm-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="doctor-outside-item">
                             <div class="doctor-item">
                                 <img class="doctor-item-photo" src="<?php echo $d['small_image']; ?>"/>

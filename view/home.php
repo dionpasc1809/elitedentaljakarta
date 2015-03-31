@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <form method="post" id="form-submit-appointment" name="form-submit-appointment">
-                            <div class="col-sm-4">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label><span class="label-title">Name : </span></label>
                                     <input data-validation="required" data-validation-error-msg="Please enter your name !!" class="form-control" type="text" placeholder="Enter your name" id="inp_name" name="inp_name"/>
@@ -35,7 +35,7 @@
                                     <input data-validation="number" class="form-control" type="text" placeholder="Enter your phone number" id="inp_phone" name="inp_phone" data-validation-error-msg="Please enter your valid phone number !!"/>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label><span class="label-title">Address : </span></label>
                                     <input data-validation="required" class="form-control" type="text" placeholder="Enter your address" id="inp_address" name="inp_address" data-validation-error-msg="Please enter your address !!"/>
@@ -49,7 +49,7 @@
                                     <input data-validation="required" class="form-control" type="text" placeholder="Enter your state / province" id="inp_state" name="inp_state" data-validation-error-msg="Please enter your state / province !!"/>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label><span class="label-title">Preffered Appointment Day : </span></label>
                                     <select class="form-control" id="inp_appointment_day" name="inp_appointment_day">
@@ -98,9 +98,9 @@
                                 <hr class="appointment-hr"/>
                             </div>
                             <div class="col-sm-12">
-                                <div class="col-sm-4"></div>
-                                <div class="col-sm-4"></div>
-                                <div class="col-sm-4">
+                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <div class="form-group">
                                         <input type="submit" id="submit-appointment" class="btn btn-appointment" value="MAKE APPOINTMENT"/>
                                     </div>
@@ -112,47 +112,96 @@
             </div>
         </div>
         <div class="appointment-filler"></div>
-        <div id="carouselAboutus" class="carousel slide carousel-fade">
-            <!-- Carousel indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carouselAboutus" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselAboutus" data-slide-to="1"></li>
-                <li data-target="#carouselAboutus" data-slide-to="2"></li>
-            </ol>
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="images/home/about-us-image-1.jpg">
-                    <div class="about-float" style="margin-left:-400px;">
-                        <div class="about-float-title">About Us</div>
-                        <div class="about-float-desc">Located in Kebayoran, South Jakarta, Elite Dental Clinic’s highly trained and qualified professionals and our caring staff, provide the highest quality dental care through our comfortable dental office and lounge, using the latest state of the art technology dental equipments and materials.</div>
+        <div class="hidden-sm hidden-xs">
+            <div id="carouselAboutus" class="carousel slide carousel-fade">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselAboutus" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselAboutus" data-slide-to="1"></li>
+                    <li data-target="#carouselAboutus" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/home/about-us-image-1.jpg">
+                        <div class="about-float" style="margin-left:-400px;">
+                            <div class="about-float-title">About Us</div>
+                            <div class="about-float-desc">Located in Kebayoran, South Jakarta, Elite Dental Clinic’s highly trained and qualified professionals and our caring staff, provide the highest quality dental care through our comfortable dental office and lounge, using the latest state of the art technology dental equipments and materials.</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/home/about-us-image-2.jpg">
+                        <div class="about-float" style="margin-left:-400px;">
+                            <div class="about-float-title">About Us</div>
+                            <div class="about-float-desc">Our mission is to give the best dental care to our valued patients. We will listen to you carefully and examine your dental condition thouroughly. Our intra oral dental camera will give the pleasure of viewing your entire teeth condition, and how we treat them as well. You will be given treatment options based on the diagnosis, and we will provide you the best treatment with quality.</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/home/about-us-image-3.jpg">
+                        <div class="about-float" style="margin-left:-400px;">
+                            <div class="about-float-title">About Us</div>
+                            <div class="about-float-desc">We take special care to keep you comfortable, attend to any immediate issues you may have, answer all your questions, explain any procedures and teach you how to keep your mouth healthy. You’ll be impressed with the quality of our services and the caring of our staff.</div>
+                        </div>
                     </div>
                 </div>
-                <div class="item">
-                    <img src="images/home/about-us-image-2.jpg">
-                    <div class="about-float" style="margin-left:-400px;">
-                        <div class="about-float-title">About Us</div>
-                        <div class="about-float-desc">Our mission is to give the best dental care to our valued patients. We will listen to you carefully and examine your dental condition thouroughly. Our intra oral dental camera will give the pleasure of viewing your entire teeth condition, and how we treat them as well. You will be given treatment options based on the diagnosis, and we will provide you the best treatment with quality.</div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="images/home/about-us-image-3.jpg">
-                    <div class="about-float" style="margin-left:-400px;">
-                        <div class="about-float-title">About Us</div>
-                        <div class="about-float-desc">We take special care to keep you comfortable, attend to any immediate issues you may have, answer all your questions, explain any procedures and teach you how to keep your mouth healthy. You’ll be impressed with the quality of our services and the caring of our staff.</div>
-                    </div>
-                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#carouselAboutus" data-slide="prev">
+                    <span class="filler-middle"></span>
+                    <span class="arrow-left"></span>
+                </a>
+                <a class="carousel-control right" href="#carouselAboutus" data-slide="next">
+                    <span class="filler-middle"></span>
+                    <span class="arrow-right"></span>
+                </a>
             </div>
-            <!-- Carousel nav -->
-            <a class="carousel-control left" href="#carouselAboutus" data-slide="prev">
-                <span class="filler-middle"></span>
-                <span class="arrow-left"></span>
-            </a>
-            <a class="carousel-control right" href="#carouselAboutus" data-slide="next">
-                <span class="filler-middle"></span>
-                <span class="arrow-right"></span>
-            </a>
         </div>
+
+        <div class="visible-sm visible-xs">
+            <div id="carouselAboutus-mobile" class="carousel slide carousel-fade">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselAboutus-mobile" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselAboutus-mobile" data-slide-to="1"></li>
+                    <li data-target="#carouselAboutus-mobile" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active" style="height:850px; background-image:url('images/home/about-us-image-1.jpg'); background-position: top center; background-size: auto 850px;">
+                        <!-- <img src="images/home/about-us-image-1.jpg"> -->
+                        <div class="about-float">
+                            <div class="about-float-title">About Us</div>
+                            <div class="about-float-desc">Located in Kebayoran, South Jakarta, Elite Dental Clinic’s highly trained and qualified professionals and our caring staff, provide the highest quality dental care through our comfortable dental office and lounge, using the latest state of the art technology dental equipments and materials.</div>
+                        </div>
+                    </div>
+                    <div class="item" style="height:850px; background-image:url('images/home/about-us-image-2.jpg'); background-position: top center; background-size: auto 850px;">
+                        <!-- <img src="images/home/about-us-image-2.jpg"> -->
+                        <div class="about-float">
+                            <div class="about-float-title">About Us</div>
+                            <div class="about-float-desc">Our mission is to give the best dental care to our valued patients. We will listen to you carefully and examine your dental condition thouroughly. Our intra oral dental camera will give the pleasure of viewing your entire teeth condition, and how we treat them as well. You will be given treatment options based on the diagnosis, and we will provide you the best treatment with quality.</div>
+                        </div>
+                    </div>
+                    <div class="item" style="height:850px; background-image:url('images/home/about-us-image-3.jpg'); background-position: top center; background-size: auto 850px;">
+                        <!-- <img src="images/home/about-us-image-3.jpg"> -->
+                        <div class="about-float">
+                            <div class="about-float-title">About Us</div>
+                            <div class="about-float-desc">We take special care to keep you comfortable, attend to any immediate issues you may have, answer all your questions, explain any procedures and teach you how to keep your mouth healthy. You’ll be impressed with the quality of our services and the caring of our staff.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#carouselAboutus-mobile" data-slide="prev">
+                    <span class="filler-middle"></span>
+                    <span class="arrow-left"></span>
+                </a>
+                <a class="carousel-control right" href="#carouselAboutus-mobile" data-slide="next">
+                    <span class="filler-middle"></span>
+                    <span class="arrow-right"></span>
+                </a>
+            </div>
+        </div>
+
+
+
     </section>
     <section id="treatment">
         <div style="width: 100%; height: 60px;"></div>
@@ -178,21 +227,23 @@
                             Treatment
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-general-dental-check-up.png"/>
-                                </div>
+                                    <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                               </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div style="width:100%; height: 60px;"></div>
                                     <div class="treatment-item-title">General Dental Check Up</div>
                                     <ul class="treatment-item-list">
                                         <li>At your first visit, our goal is do a comprehensive risk based assessment at 4 major points : teeth, gums and bone, function and your esthetics. After that, we will tailor our treatment plan to your specific needs. A reguler check up will identify existing dental issues and diseases on the early stage, so we can prevent the bigger problems down the line</li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
                             </div>
                         </div>
                     </div>
@@ -203,14 +254,16 @@
                             Treatment
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-preventive-dentistry.png"/>
-                                </div>
+                                    <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                               </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div style="width:100%; height: 60px;"></div>
                                     <div class="treatment-item-title">Preventive Dentistry</div>
                                     <ul class="treatment-item-list">
@@ -219,7 +272,7 @@
                                         <li><span class="treatment-item-list-title">Fluoride Application</span></li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
                             </div>
                         </div>
                     </div>
@@ -230,14 +283,16 @@
                             Treatment
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-orthodontics.png"/>
                                 </div>
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div style="width:100%; height: 60px;"></div>
                                     <div class="treatment-item-title">Orthodontics</div>
                                     <ul class="treatment-item-list">
@@ -247,7 +302,7 @@
 
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
                             </div>
                         </div>
                     </div>
@@ -258,14 +313,16 @@
                             Treatment
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-Esthetic-Dentistry.png"/>
                                 </div>
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div style="width:100%; height: 60px;"></div>
                                     <div class="treatment-item-title">Esthetic Dentistry
                                         <br/>
@@ -278,7 +335,7 @@
 
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
                             </div>
                         </div>
                     </div>
@@ -289,14 +346,16 @@
                             Treatment
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-Esthetic-Dentistry.png"/>
                                 </div>
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div style="width:100%; height: 60px;"></div>
                                     <div class="treatment-item-title">Esthetic Dentistry
                                         <br/>
@@ -308,7 +367,7 @@
 
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
                             </div>
                         </div>
                     </div>
@@ -319,21 +378,23 @@
                             Treatment
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-endodontics.png"/>
                                 </div>
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div style="width:100%; height: 60px;"></div>
                                     <div class="treatment-item-title">Endodontics / Root Canal Treatment</div>
                                     <ul class="treatment-item-list">
                                         <li>Sometimes deep decay can make a serious infection that affect pulp’s ability to stay healthy and it begins to atrophy, that leads to severe pain and sometimes an abcess. In this case, the nerves and vascular system in the center of your tooth have to be removed, cleaned and then filled.</li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
                             </div>
                         </div>
                     </div>
@@ -344,14 +405,16 @@
                             Treatment
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-prosthodontics.png"/>
                                 </div>
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div style="width:100%; height: 60px;"></div>
                                     <div class="treatment-item-title">Prosthodontics
                                         <br/>
@@ -363,7 +426,7 @@
                                         <li><span class="treatment-item-list-title">Removable Denture</span> : when you lost a lot of teeth, in order to obtain a good speaking and chewing function, you may need to use a removable denture</li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
                             </div>
                         </div>
                     </div>
@@ -374,14 +437,16 @@
                             Treatment
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-oral-surgery.png"/>
                                 </div>
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div style="width:100%; height: 60px;"></div>
                                     <div class="treatment-item-title">Oral Surgery</div>
                                     <ul class="treatment-item-list">
@@ -390,7 +455,7 @@
                                         <li><span class="treatment-item-list-title">Minor Surgeries</span> : osteotomy</li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
                             </div>
                         </div>
                     </div>
@@ -401,21 +466,23 @@
                             Treatment
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-children.png"/>
                                 </div>
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div style="width:100%; height: 60px;"></div>
                                     <div class="treatment-item-title">Pediatric/Child Dentistry</div>
                                     <ul class="treatment-item-list">
                                         <li>Hi parents and children. <br/>We are happy to see you and your little ones in our clinics. We work hard to make each dental visit fun and kid-oriented, because we believe that positive dental experiences during childhood builds a foundation of good oral health, and need not be a scary experience for your child. We will help your children to have a good oral hygiene, healthy teeth and great smile.</li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
                             </div>
                         </div>
                     </div>
@@ -426,21 +493,23 @@
                             Treatment
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-full-mouth.png"/>
                                 </div>
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div style="width:100%; height: 60px;"></div>
                                     <div class="treatment-item-title">Full Mouth Rehabilitation</div>
                                     <ul class="treatment-item-list">
                                         <li>Dental treatment procedure that will creates a beautiful, healthy and functional smiles. Typically involves general or restorative dentists (performing procedures like crowns, bridges and veneers), and can incorporate dental specialists like periodontists (specializing in the gums), oral surgeons, orthodontists (specializing in tooth movements and positions) and endodontists (specializing in the tooth pulp)</li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
                             </div>
                         </div>
                     </div>
@@ -492,14 +561,15 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="position: relative;">
 
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="position: relative;">
+                        <div class="col-lg-0 col-md-0 col-sm-1 col-xs-1"></div>
+                        <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10" style="position: relative;">
                             <img style="width: 100%;" src="images/home/contact-maps-mask.png"/>
                             <iframe style="position: absolute; width:100%; height:100%; top:0; left:0; border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=elite%20dental%20clinic&key=AIzaSyBZAx18fPZ10Mc9ajbnlh3jPbHqPEVbRx0"></iframe>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                        <div class="col-lg-4 col-md-4 col-sm-1 col-xs-1"></div>
 
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%; height: 100px;"></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%; height: 300px;"></div>
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
             </div>
@@ -508,15 +578,15 @@
         <div class="bottom-footer" style="display: none;">
             <div class="inside-footer">
                 <div class="footer-text">Like / Follow us on :</div>
-                <div class="fb-logo">&nbsp;</div>
-                <div class="twitter-logo">&nbsp;</div>
+                <div class="fb-logo show-pointer" data-toggle="modal" data-target="#fbLike">&nbsp;</div>
+                <div class="twitter-logo show-pointer">&nbsp;</div>
             </div>
             <div class="popout-footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-3"></div>
                         <div class="col-sm-6">
-                            <div class="fb-like" data-share="true" data-width="360" data-show-faces="true">&nbsp;</div>
+
                         </div>
                         <div class="col-sm-3"></div>
                         <!--<div class="col-sm-6">
@@ -533,6 +603,25 @@
             </div>
         </div>
     </section>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="fbLike" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Like on FB
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="fb-like" data-share="false" data-width="360" data-show-faces="true">&nbsp;</div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
 </div>
 
 <script type="text/javascript">

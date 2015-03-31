@@ -65,7 +65,7 @@
     padding: 15px 40px;
 }
 
-.menubar ul {
+.menubar > ul {
     list-style: none;
     text-align: center;
     display: inline-block;
@@ -73,12 +73,45 @@
     padding-left: 0px;
 }
 
-.menubar ul li {
+.menubar > ul > a > li, .menubar > ul > li.li-logo-img {
     font-family: klavika-l;
     text-transform: uppercase;
     float:left;
     display: inline;
     padding: 40px 40px;
+}
+
+.mobile-menu {
+    position: absolute;
+    top:10px;
+    right:20px;
+}
+
+.menubar ul.dropdown-menu {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    position: absolute;
+    right:0;
+    left:auto;
+}
+
+.menubar ul.dropdown-menu li {
+    font-family: klavika-l;
+    text-transform: uppercase;
+    float:left;
+    padding: 10px 40px;
+    width:160px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.menubar ul.dropdown-menu li:hover {
+    background-color: rgba(0,0,0,0.1);
 }
 
 .carousel-fade .carousel-inner .item {
@@ -486,6 +519,7 @@
 
 #carouselTreatment .carousel-inner .item {
     min-height: 600px;
+    margin-bottom: 50px;
 }
 
 #carouselTreatment .carousel-control .arrow-left {
@@ -705,9 +739,15 @@
     left:0;
     bottom:82px;
     width: 100%;
-    height: 40px;
+    height: 100px;
     background-color: rgba(0,0,0,0.05);
     line-height: 40px;
+    visibility: hidden;
+}
+
+.show-pointer {
+    cursor:pointer;
+    cursor:hand;
 }
 
 
@@ -716,7 +756,11 @@
 
 /* ------------------------- Bootstrap media container ------------------------- */
 @media screen and (max-width: 991px){/* for Desktops */
-
+    .contact-title {
+        font-family: helvetica-neue;
+        font-size: 41px;
+        color: #1A75A6;
+    }
 }
 
 @media screen and (min-width: 768px){/* for Tablets */
@@ -724,5 +768,75 @@
 }
 
 @media screen and (max-width: 767px){/* for Small Phones */
+    .title-appointment {
+        font-family: klavika-m;
+        font-size: 20px;
+        color: #FFF;
+        line-height: 72px;
+        border-bottom: 1px solid #FFF;
+    }
 
+    .triangle {
+        position: absolute;
+        bottom: -11px;
+        left: 50%;
+        margin-left: -13px;
+        width: 23px;
+        height: 23px;
+        outline: 2px solid #2686BF;
+        background-color: #2686BF;
+        z-index: -1;
+        transform: rotate(45deg);
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .about-float {
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        margin-left: -150px;
+        display: inline-block;
+        width: 300px;
+        min-height: 500px;
+    }
+
+    .about-float .about-float-title {
+        font-family: helvetica-neue;
+        font-weight: bold;
+        font-size: 52px;
+        color: #1A75A6;
+    }
+
+    .treatment-title {
+        font-family: helvetica-neue;
+        font-weight: bold;
+        font-size: 61px;
+        color: #FFF;
+        text-align: center;
+    }
+
+    .inside-footer {
+        font-family: klavika-m;
+        font-weight: bold;
+        font-size: 20px;
+        color: #FFF;
+    }
+
+    .appointment-form {
+        width: auto;
+        padding: 0;
+        left:0;
+        min-height:800px;
+        height:auto;
+    }
+
+    .appointment-form > .row {
+        margin-right:0;
+        margin-left:0;
+    }
+
+    .margin-off {
+        margin-right:0;
+        margin-left:0;
+    }
 }

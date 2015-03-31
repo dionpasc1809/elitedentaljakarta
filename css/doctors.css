@@ -1,181 +1,1 @@
-#thedoctors {
-    position: relative;
-}
-
-#doctor-container {
-    width: 100%;
-    min-height: 500px;
-    background-image: url("../images/doctors/BG-the-doctors.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-
-.doctor-head {
-    width: 100%;
-    min-height: 50px;
-    position: relative;
-    display: inline-block;
-}
-
-.doctor-logo {
-    display: inline-block;
-    float:left;
-}
-
-.doctor-logo img {
-    height: 100px;
-}
-
-.doctor-head-title {
-    display: inline-block;
-    float:right;
-    font-family: klavika-l;
-    color: #2686bf;
-    font-size: 46px;
-    line-height: 100px;
-}
-
-.doctor-content {
-    margin-top: 50px;
-}
-
-.doctor-outside-item {
-    padding: 20px 50px;
-}
-
-.doctor-item {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    border: 1px solid #2686bf;
-}
-
-.doctor-item img.doctor-item-photo {
-    width: 100%;
-}
-
-.doctor-item-small-role {
-    position: absolute;
-    top:0; left:0;
-    width: 100%;
-    background-color: rgba(0,0,0,0.3);
-    color: #FFF;
-    font-family: klavika-l;
-    font-size: 18px;
-    text-align: center;
-    z-index:5;
-}
-
-.doctor-item-small-title {
-    position: absolute;
-    bottom:0px; left:0;
-    width: 100%;
-    background-color: rgba(0,0,0,0.3);
-    color: #FFF;
-    font-family: klavika-l;
-    font-size: 18px;
-    text-align: center;
-    z-index:5;
-}
-
-.doctor-btn {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 0px 0px;
-    opacity: 0;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -ms-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.doctor-btn:hover {
-    opacity: 1;
-}
-
-.doctor-btn > a {
-    position: absolute;
-    top:0; left:0;
-    width:100%;
-    height:100%;
-}
-
-.doctor-btn > a > img {
-    position: absolute;
-    top:50%; left:50%;
-    margin-top:-24px;
-    margin-left:-24px;
-}
-
-#popupDoctors .modal-backdrop.in {
-    opacity: 0.7;
-}
-
-#popupDoctors .modal-content {
-    border-radius: 0px;
-}
-
-#popupDoctors .modal-dialog {
-    width: 800px;
-}
-
-#popupDoctors .modal-content .modal-body .data-doctors {
-    position: relative;
-    display: inline-block;
-}
-
-#popupDoctors .modal-content .modal-body .data-doctor-imgbig {
-    width: 300px;
-    display: inline-block;
-    float:left;
-    margin-right: 20px;
-}
-
-#popupDoctors .modal-content .modal-body .data-doctor-desc {
-    float:right;
-    width: 400px;
-    height: 388px;
-    display: inline-block;
-    font-family: klavika-l;
-    font-size: 16px;
-    color: #2686bf;
-}
-
-#popupDoctors .modal-content .modal-body .data-doctor-name {
-    float:right;
-    width: 400px;
-    height: 50px;
-    display: inline-block;
-    font-family: klavika-m;
-    font-size: 26px;
-    color: #2686bf;
-}
-
-.mCS-elitedc.mCSB_scrollTools .mCSB_draggerRail{
-    background-color: #000; background-color: rgba(38,134,191,0.1);
-    -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
-}
-
-.mCS-elitedc.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-    background-color: #000; background-color: rgba(38,134,191,0.75);
-    -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
-}
-
-.mCS-elitedc.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{ background-color: #000; background-color: rgba(38,134,191,0.85); }
-
-.mCS-elitedc.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
-.mCS-elitedc.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: #000; background-color: rgba(38,134,191,0.9); }
-
-.mCS-elitedc.mCSB_scrollTools .mCSB_buttonUp{ background-position: -96px 0; }
-
-.mCS-elitedc.mCSB_scrollTools .mCSB_buttonDown{ background-position: -96px -20px; }
-
-.mCS-elitedc.mCSB_scrollTools .mCSB_buttonLeft{ background-position: -100px -40px; }
-
-.mCS-elitedc.mCSB_scrollTools .mCSB_buttonRight{	background-position: -100px -56px; }
+#thedoctors {    position: relative;}#doctor-container {    width: 100%;    min-height: 500px;    background-image: url("../images/doctors/BG-the-doctors.jpg");    background-repeat: no-repeat;    background-position: top center;}.doctor-head {    width: 100%;    min-height: 50px;    position: relative;    display: inline-block;}.doctor-logo {    display: inline-block;    float: left;}.doctor-logo img {    height: 100px;}.doctor-head-title {    display: inline-block;    float: right;    font-family: klavika-l;    color: #2686bf;    font-size: 46px;    line-height: 100px;}.doctor-content {    margin-top: 50px;}.doctor-outside-item {    padding: 20px 50px;}.doctor-item {    display: inline-block;    position: relative;    width: 100%;    border: 1px solid #2686bf;}.doctor-item img.doctor-item-photo {    width: 100%;}.doctor-item-small-role {    position: absolute;    top: 0;    left: 0;    width: 100%;    background-color: rgba(0, 0, 0, 0.3);    color: #FFF;    font-family: klavika-l;    font-size: 18px;    text-align: center;    z-index: 5;}.doctor-item-small-title {    position: absolute;    bottom: 0px;    left: 0;    width: 100%;    background-color: rgba(0, 0, 0, 0.3);    color: #FFF;    font-family: klavika-l;    font-size: 18px;    text-align: center;    z-index: 5;}.doctor-btn {    width: 100%;    position: absolute;    text-align: center;    top: 0px;    left: 0px;    height: 100%;    background-color: rgba(0, 0, 0, 0.5);    margin: 0px 0px;    opacity: 0;    -webkit-transition: opacity 0.5s ease-in-out;    -moz-transition: opacity 0.5s ease-in-out;    -ms-transition: opacity 0.5s ease-in-out;    -o-transition: opacity 0.5s ease-in-out;    transition: opacity 0.5s ease-in-out;}.doctor-btn:hover {    opacity: 1;}.doctor-btn > a {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}.doctor-btn > a > img {    position: absolute;    top: 50%;    left: 50%;    margin-top: -24px;    margin-left: -24px;}#popupDoctors .modal-backdrop.in {    opacity: 0.7;}#popupDoctors .modal-content {    border-radius: 0px;}#popupDoctors .modal-dialog {    width: 800px;}#popupDoctors .modal-content .modal-body .data-doctors {    position: relative;    display: inline-block;}#popupDoctors .modal-content .modal-body .data-doctor-imgbig {    width: 300px;    display: inline-block;    float: left;    margin-right: 20px;}#popupDoctors .modal-content .modal-body .data-doctor-desc {    float: right;    width: 400px;    height: 388px;    display: inline-block;    font-family: klavika-l;    font-size: 16px;    color: #2686bf;}#popupDoctors .modal-content .modal-body .data-doctor-name {    float: right;    width: 400px;    height: 50px;    display: inline-block;    font-family: klavika-m;    font-size: 26px;    color: #2686bf;}.mCS-elitedc.mCSB_scrollTools .mCSB_draggerRail {    background-color: #000;    background-color: rgba(38, 134, 191, 0.1);    -webkit-border-radius: 2px;    -moz-border-radius: 2px;    border-radius: 2px;}.mCS-elitedc.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {    background-color: #000;    background-color: rgba(38, 134, 191, 0.75);    -webkit-border-radius: 2px;    -moz-border-radius: 2px;    border-radius: 2px;}.mCS-elitedc.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {    background-color: #000;    background-color: rgba(38, 134, 191, 0.85);}.mCS-elitedc.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,.mCS-elitedc.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {    background-color: #000;    background-color: rgba(38, 134, 191, 0.9);}.mCS-elitedc.mCSB_scrollTools .mCSB_buttonUp {    background-position: -96px 0;}.mCS-elitedc.mCSB_scrollTools .mCSB_buttonDown {    background-position: -96px -20px;}.mCS-elitedc.mCSB_scrollTools .mCSB_buttonLeft {    background-position: -100px -40px;}.mCS-elitedc.mCSB_scrollTools .mCSB_buttonRight {    background-position: -100px -56px;}@media screen and (min-width: 768px){/* for Tablets */}@media screen and (max-width: 767px) {/* for Small Phones */    #popupDoctors .modal-dialog {        width: 350px;    }    #popupDoctors .modal-content .modal-body .data-doctor-name {        float: right;        width: 350px;        height: 50px;        display: inline-block;        font-family: klavika-m;        font-size: 26px;        color: #2686BF;    }    #popupDoctors .modal-content .modal-body .data-doctor-desc {        float: left;        width: 330px;        height: 388px;        display: inline-block;        font-family: klavika-l;        font-size: 16px;        color: #2686BF;    }    #popupDoctors .modal-dialog {        margin: 20px auto;    }}
