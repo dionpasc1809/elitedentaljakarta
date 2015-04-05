@@ -750,6 +750,11 @@
     cursor:hand;
 }
 
+.margin-off {
+    margin-right:0;
+    margin-left:0;
+}
+
 
 
 /* ------------------------ end section : contact ------------------------ */
