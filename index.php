@@ -42,7 +42,7 @@ session_start();
     </script>
     <section ng-include="'templates/headernav.php'"></section>
 
-    <div class="row">
+    <div class="row margin-off">
         <div class="ui-view-container">
             <div class="animated-view" ui-view>
 
@@ -87,7 +87,7 @@ session_start();
             var contact_offset = $('#contact').offset().top;
             var contact_height = $('#contact').height();
 
-            var contact_from_bottom = ( contact_offset + contact_height ) - window_height;
+            var contact_from_bottom = ( ( contact_offset + contact_height ) - window_height ) - 50;
 
             if(window_offset >= contact_from_bottom)
             {
