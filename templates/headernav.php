@@ -8,22 +8,34 @@ $get_promo = DB::query("SELECT * FROM tb_promo");
         <div class="menubar">
             <ul>
                 <li class="li-logo-img"><img class="logo-img" src="images/home/logo.png"/></li>
-                <a ui-sref="home" onclick="navigateSlide('home');"><li>Home</li></a>
-                <a ui-sref="home" onclick="navigateSlide('aboutus');"><li>About Us</li></a>
-                <a ui-sref="doctors"><li>The Doctors</li></a>
-                <a ui-sref="home" onclick="navigateSlide('treatment');"><li>Treatment</li></a>
-                <a ui-sref="home" onclick="navigateSlide('contact');"><li>Contact</li></a>
+                <a class="hidden-sm hidden-xs" ui-sref="home" onclick="navigateSlide('home');"><li>Home</li></a>
+                <a class="hidden-sm hidden-xs" ui-sref="home" onclick="navigateSlide('aboutus');"><li>About Us</li></a>
+                <a class="hidden-sm hidden-xs" ui-sref="doctors"><li>The Doctors</li></a>
+                <a class="hidden-sm hidden-xs" ui-sref="home" onclick="navigateSlide('treatment');"><li>Treatment</li></a>
+                <a class="hidden-sm hidden-xs" ui-sref="home" onclick="navigateSlide('contact');"><li>Contact</li></a>
             </ul>
+            <div class="btn-group mobile-menu visible-sm visible-xs">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <a ui-sref="home" onclick="navigateSlide('home');"><li>Home</li></a>
+                    <a ui-sref="home" onclick="navigateSlide('aboutus');"><li>About Us</li></a>
+                    <a ui-sref="doctors"><li>The Doctors</li></a>
+                    <a ui-sref="home" onclick="navigateSlide('treatment');"><li>Treatment</li></a>
+                    <a ui-sref="home" onclick="navigateSlide('contact');"><li>Contact</li></a>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="slider-container">
+    <div class="slider-container hidden-sm hidden-xs">
         <div id="home-slider" class="carousel slide carousel-fade">
             <!-- Carousel indicators -->
             <ol class="carousel-indicators">
                 <?php
                 $a=0;
                 foreach($get_promo as $gp): ?>
-                    <li data-target="#home-slider" data-slide-to="<?php echo $a; ?>" <?php if($a==0){ ?> class="active"><?php }?></li>
+                    <li data-target="#home-slider" data-slide-to="<?php echo $a; ?>" <?php if($a==0){ ?> class="active"<?php }?>></li>
                 <?php
                     $a++;
                 endforeach; ?>
@@ -61,6 +73,52 @@ $get_promo = DB::query("SELECT * FROM tb_promo");
             </a>
         </div>
     </div>
+
+    <div class="slider-container visible-sm visible-xs">
+        <div id="home-slider-mobile" class="carousel slide carousel-fade">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <?php
+                $a=0;
+                foreach($get_promo as $gp): ?>
+                    <li data-target="#home-slider-mobile" data-slide-to="<?php echo $a; ?>" <?php if($a==0){ ?> class="active"<?php }?>></li>
+                    <?php
+                    $a++;
+                endforeach; ?>
+                <!--                <li data-target="#home-slider-mobile" data-slide-to="3"></li>-->
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <?php
+                $b=0;
+                foreach($get_promo as $gp):
+                    $link = $gp['promo_link'];
+                    ?>
+                        <div class="item<?php if($b==0){ echo " active"; } ?>" style="background-image:url('<?php echo $gp['promo_image']; ?>'); background-position: top center; height:250px; background-size: auto 250px;">
+                            <a href="<?php if($link==""){ echo "#"; } else { echo $link; } ?>"></a>
+                                <!--<img style="width:100%;" src="<?php /*echo $gp['promo_image']; */?>"/>-->
+                        </div>
+                    <?php
+                    $b++;
+                endforeach; ?>
+                <!--<div class="item">
+                    <div style="width: 100%; height:483px; text-align: center;">
+                        <iframe style="display:inline-block;" width="600" height="378" scrolling="no" frameborder="0" src="http://damonbraces.com/promo/damon-clear/whos-wearing-damon-clear.php"></iframe>
+                    </div>
+                </div>-->
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#home-slider-mobile" data-slide="prev">
+                <span class="filler-middle"></span>
+                <span class="arrow-left"></span>
+            </a>
+            <a class="carousel-control right" href="#home-slider-mobile" data-slide="next">
+                <span class="filler-middle"></span>
+                <span class="arrow-right"></span>
+            </a>
+        </div>
+    </div>
+
     <script type="text/javascript">
         function navigateSlide(index) {
             var offset = 0;
