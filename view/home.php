@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <form method="post" id="form-submit-appointment" name="form-submit-appointment">
-                            <div class="col-sm-4">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label><span class="label-title">Name : </span></label>
                                     <input data-validation="required" data-validation-error-msg="Please enter your name !!" class="form-control" type="text" placeholder="Enter your name" id="inp_name" name="inp_name"/>
@@ -35,7 +35,7 @@
                                     <input data-validation="number" class="form-control" type="text" placeholder="Enter your phone number" id="inp_phone" name="inp_phone" data-validation-error-msg="Please enter your valid phone number !!"/>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label><span class="label-title">Address : </span></label>
                                     <input data-validation="required" class="form-control" type="text" placeholder="Enter your address" id="inp_address" name="inp_address" data-validation-error-msg="Please enter your address !!"/>
@@ -49,7 +49,7 @@
                                     <input data-validation="required" class="form-control" type="text" placeholder="Enter your state / province" id="inp_state" name="inp_state" data-validation-error-msg="Please enter your state / province !!"/>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label><span class="label-title">Preffered Appointment Day : </span></label>
                                     <select class="form-control" id="inp_appointment_day" name="inp_appointment_day">
@@ -98,9 +98,9 @@
                                 <hr class="appointment-hr"/>
                             </div>
                             <div class="col-sm-12">
-                                <div class="col-sm-4"></div>
-                                <div class="col-sm-4"></div>
-                                <div class="col-sm-4">
+                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <div class="form-group">
                                         <input type="submit" id="submit-appointment" class="btn btn-appointment" value="MAKE APPOINTMENT"/>
                                     </div>
@@ -166,21 +166,21 @@
                 </ol>
                 <!-- Carousel items -->
                 <div class="carousel-inner">
-                    <div class="item active" style="height:600px; background-image:url('images/home/about-us-image-1.jpg'); background-position: top center; background-size: auto 600px;">
+                    <div class="item active" style="height:850px; background-image:url('images/home/about-us-image-1.jpg'); background-position: top center; background-size: auto 850px;">
                         <!-- <img src="images/home/about-us-image-1.jpg"> -->
                         <div class="about-float">
                             <div class="about-float-title">About Us</div>
                             <div class="about-float-desc">Located in Kebayoran, South Jakarta, Elite Dental Clinic’s highly trained and qualified professionals and our caring staff, provide the highest quality dental care through our comfortable dental office and lounge, using the latest state of the art technology dental equipments and materials.</div>
                         </div>
                     </div>
-                    <div class="item" style="height:600px; background-image:url('images/home/about-us-image-2.jpg'); background-position: top center; background-size: auto 600px;">
+                    <div class="item" style="height:850px; background-image:url('images/home/about-us-image-2.jpg'); background-position: top center; background-size: auto 850px;">
                         <!-- <img src="images/home/about-us-image-2.jpg"> -->
                         <div class="about-float">
                             <div class="about-float-title">About Us</div>
                             <div class="about-float-desc">Our mission is to give the best dental care to our valued patients. We will listen to you carefully and examine your dental condition thouroughly. Our intra oral dental camera will give the pleasure of viewing your entire teeth condition, and how we treat them as well. You will be given treatment options based on the diagnosis, and we will provide you the best treatment with quality.</div>
                         </div>
                     </div>
-                    <div class="item" style="height:600px; background-image:url('images/home/about-us-image-3.jpg'); background-position: top center; background-size: auto 600px;">
+                    <div class="item" style="height:850px; background-image:url('images/home/about-us-image-3.jpg'); background-position: top center; background-size: auto 850px;">
                         <!-- <img src="images/home/about-us-image-3.jpg"> -->
                         <div class="about-float">
                             <div class="about-float-title">About Us</div>
@@ -569,7 +569,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-1 col-xs-1"></div>
 
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%; height: 200px;"></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%; height: 300px;"></div>
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
             </div>
@@ -578,15 +578,15 @@
         <div class="bottom-footer" style="display: none;">
             <div class="inside-footer">
                 <div class="footer-text">Like / Follow us on :</div>
-                <div class="fb-logo">&nbsp;</div>
-                <div class="twitter-logo">&nbsp;</div>
+                <div class="fb-logo show-pointer" data-toggle="modal" data-target="#fbLike">&nbsp;</div>
+                <div class="twitter-logo show-pointer">&nbsp;</div>
             </div>
             <div class="popout-footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-3"></div>
                         <div class="col-sm-6">
-                            <div class="fb-like" data-share="true" data-width="360" data-show-faces="true">&nbsp;</div>
+
                         </div>
                         <div class="col-sm-3"></div>
                         <!--<div class="col-sm-6">
@@ -603,6 +603,25 @@
             </div>
         </div>
     </section>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="fbLike" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Like on FB
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="fb-like" data-share="false" data-width="360" data-show-faces="true">&nbsp;</div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
 </div>
 
 <script type="text/javascript">

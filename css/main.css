@@ -324,9 +324,14 @@
     padding: 15px;
     transform: scaleY(0);
     -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
     transform-origin: left top;
     -webkit-transform-origin: left top;
     -moz-transform-origin: left top;
+    -o-transform-origin: left top;
+    -ms-transform-origin: left top;
     background-color:rgba(38,134,191,1);
     border-radius: 0px 0px 5px 5px;
     -webkit-transition: all 0.5s ease-in-out;
@@ -370,6 +375,9 @@
 .appointment-dropdown.dropped .appointment-form {
     transform: scaleY(1);
     -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
 }
 
 .appointment-dropdown.dropped .form-group {

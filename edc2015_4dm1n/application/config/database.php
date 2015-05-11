@@ -49,9 +49,15 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'elitedentaljakarta';
+
+//$db['default']['username'] = 'root';
+//$db['default']['password'] = '';
+//$db['default']['database'] = 'elitedentaljakarta';
+
+$db['default']['username'] = 'u0633340_admin';
+$db['default']['password'] = 'hacker300z';
+$db['default']['database'] = 'u0633340_elitedentaljakarta';
+
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
