@@ -15,6 +15,7 @@
 |
 */
 $config['base_url']	= 'http://localhost/elitedentaljakarta/edc2015_4dm1n/';
+//$config['base_url']	= 'http://elitedentaljakarta.com/elitedc/edc2015_4dm1n/';
 
 /*
 |--------------------------------------------------------------------------
