@@ -13,6 +13,11 @@
     src: url('../fonts/Klavika-Medium.otf');
 }
 
+@font-face {
+    font-family: klavika-li;
+    src: url('../fonts/KLAVIKALIGHT-ITALIC.OTF');
+}
+
 .page-header {
     display:inline-block;
     width: 100%;
@@ -669,6 +674,114 @@
 
 /* -------------------------- end section : treatment -------------------------- */
 
+/* -------------------------- section : comments -------------------------- */
+#comments {
+    position:relative;
+    background-image:url("../images/comments/BG.jpg");
+    background-position:center bottom;
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+    width:100%;
+    min-height: 750px;
+    height: auto;
+}
+
+.comments-wrapper {
+    min-height: 750px;
+    text-align: center;
+}
+
+.comments-inside-wrapper {
+    position: relative;
+    width: 1048px;
+    min-height: 100px;
+    display: inline-block;
+}
+
+.comment-item {
+    width: 514px;
+    height: 321px;
+    float:left;
+    background-image:url('../images/comments/box.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding:30px;
+    margin: 5px 5px;
+}
+
+.comment-item-photo {
+    float:left;
+    width:100px;
+    height: 100px;
+    background-image:url('../images/comments/template-foto.png');
+    background-repeat: no-repeat;
+}
+
+.comment-item-header {
+    float:left;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    line-height: 35px;
+    padding-left: 20px;
+    text-align:left;
+}
+
+.comment-item-header-name {
+    font-family: klavika-m;
+    font-weight: bold;
+    font-size: 27px;
+    color: #1a75a6;
+}
+
+.comment-item-header-title {
+    font-family: klavika-li;
+    font-size: 19px;
+    color: #1a75a6;
+}
+
+.comment-item-rating {
+    float:right;
+    height: 100px;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.comment-item-content {
+    float:left;
+    width: 100%;
+    min-height: 20px;
+    font-family: klavika-l;
+    font-size: 16px;
+    color: #1a75a6;
+    text-align: left;
+    margin-top:10px;
+}
+
+.rating-star {
+    position: relative;
+    width: 26px;
+    height: 25px;
+    background-image:url('../images/comments/bintang.png');
+    background-repeat: no-repeat;
+    background-position: -27px 0px;
+    display: inline-block;
+    line-height: 100px;
+}
+
+#footer-section {
+    position:relative;
+    /*background-image:url("../images/comments/BG.jpg");
+    background-position:center bottom;
+    background-size: 100% auto;
+    background-repeat:no-repeat;*/
+    width:100%;
+    min-height: 82px;
+    height: 82px;
+}
+/* ------------------------ end section : comments ------------------------ */
+
 /* -------------------------- section : contact -------------------------- */
 #contact {
     position:relative;
@@ -678,7 +791,7 @@
     background-size: 100% auto;*/
     background-repeat:no-repeat;
     width:100%;
-    min-height: 750px;
+    min-height: 350px;
     height: auto;
 }
 

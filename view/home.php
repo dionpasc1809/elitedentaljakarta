@@ -232,7 +232,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-general-dental-check-up.png"/>
                                     <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
-                               </div>
+                                </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
@@ -259,7 +259,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                                     <img style="width: 100%; max-width: 300px;" src="images/treatment/icons/icon-preventive-dentistry.png"/>
                                     <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
-                               </div>
+                                </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="col-lg-0 col-md-0 col-sm-2 col-xs-2"></div>
@@ -569,37 +569,125 @@
                         <div class="col-lg-4 col-md-4 col-sm-1 col-xs-1"></div>
 
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%; height: 300px;"></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:100%; height: 100px;"></div>
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
             </div>
 
         </div>
-        <div class="bottom-footer" style="display: none;">
-            <div class="inside-footer">
-                <div class="footer-text">Like / Follow us on :</div>
-                <div class="fb-logo show-pointer" data-toggle="modal" data-target="#fbLike">&nbsp;</div>
-                <div class="twitter-logo show-pointer">&nbsp;</div>
-            </div>
-            <div class="popout-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3"></div>
-                        <div class="col-sm-6">
-
+    </section>
+    <section id="comments">
+        <div class="container">
+            <div class="row">
+<!--                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comments-wrapper">
+                    <div class="contact-title" style="margin-bottom: 30px;">
+                        Comments
+                    </div>
+                    <div class="comments-inside-wrapper">
+                        <div class="comment-item">
+                            <div class="comment-item-photo"></div>
+                            <div class="comment-item-header">
+                                <div class="comment-item-header-name">John Doe</div>
+                                <div class="comment-item-header-title">Karyawan</div>
+                            </div>
+                            <div class="comment-item-rating">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </div>
+                            <div class="comment-item-content">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus elit in turpis tristique placerat. In pulvinar vehicula libero laoreet tempus. Phasellus eget interdum sapien. Morbi porttitor leo ac congue semper. Ut posuere massa neque, ut dictum lorem molestie eu. Nunc tempus ex vitae feugiat ultricies. Aenean vel purus eu dui pretium hendrerit. Nullam dapibus ante in blandit condimentum..."
+                            </div>
                         </div>
-                        <div class="col-sm-3"></div>
-                        <!--<div class="col-sm-6">
-                            <a class="twitter-follow-button"
-                               href="https://twitter.com/twitter"
-                               data-show-count="false"
-                               data-size="large">
-                                Follow @twitter
-                            </a>
-                            <script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));</script>
-                        </div>-->
+                        <div class="comment-item">
+                            <div class="comment-item-photo"></div>
+                            <div class="comment-item-header">
+                                <div class="comment-item-header-name">John Doe</div>
+                                <div class="comment-item-header-title">Karyawan</div>
+                            </div>
+                            <div class="comment-item-rating">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </div>
+                            <div class="comment-item-content">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus elit in turpis tristique placerat. In pulvinar vehicula libero laoreet tempus. Phasellus eget interdum sapien. Morbi porttitor leo ac congue semper. Ut posuere massa neque, ut dictum lorem molestie eu. Nunc tempus ex vitae feugiat ultricies. Aenean vel purus eu dui pretium hendrerit. Nullam dapibus ante in blandit condimentum..."
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-item-photo"></div>
+                            <div class="comment-item-header">
+                                <div class="comment-item-header-name">John Doe</div>
+                                <div class="comment-item-header-title">Karyawan</div>
+                            </div>
+                            <div class="comment-item-rating">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </div>
+                            <div class="comment-item-content">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus elit in turpis tristique placerat. In pulvinar vehicula libero laoreet tempus. Phasellus eget interdum sapien. Morbi porttitor leo ac congue semper. Ut posuere massa neque, ut dictum lorem molestie eu. Nunc tempus ex vitae feugiat ultricies. Aenean vel purus eu dui pretium hendrerit. Nullam dapibus ante in blandit condimentum..."
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-item-photo"></div>
+                            <div class="comment-item-header">
+                                <div class="comment-item-header-name">John Doe</div>
+                                <div class="comment-item-header-title">Karyawan</div>
+                            </div>
+                            <div class="comment-item-rating">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </div>
+                            <div class="comment-item-content">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus elit in turpis tristique placerat. In pulvinar vehicula libero laoreet tempus. Phasellus eget interdum sapien. Morbi porttitor leo ac congue semper. Ut posuere massa neque, ut dictum lorem molestie eu. Nunc tempus ex vitae feugiat ultricies. Aenean vel purus eu dui pretium hendrerit. Nullam dapibus ante in blandit condimentum..."
+                            </div>
+                        </div>
                     </div>
                 </div>
+<!--                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>-->
+            </div>
+        </div>
+    </section>
+    <section id="footer-section">
+        <div class="container">
+            <div class="bottom-footer" style="display: none;">
+                <div class="inside-footer">
+                    <div class="footer-text">Like / Follow us on :</div>
+                    <!--<div class="fb-logo show-pointer" data-toggle="modal" data-target="#fbLike">&nbsp;</div>-->
+                    <a href="https://www.facebook.com/elitedentalclinicjakarta" target="_blank"><div class="fb-logo show-pointer">&nbsp;</div></a>
+                    <div class="twitter-logo show-pointer">&nbsp;</div>
+                </div>
+                <!--<div class="popout-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-6">
+
+                            </div>
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-6">
+                                <a class="twitter-follow-button"
+                                   href="https://twitter.com/twitter"
+                                   data-show-count="false"
+                                   data-size="large">
+                                    Follow @twitter
+                                </a>
+                                <script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));</script>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
             </div>
         </div>
     </section>
@@ -640,29 +728,29 @@
     });
     $('.alert').hide();
     //    appointment form script
-        $.validate({
-            onSuccess : function() {
+    $.validate({
+        onSuccess : function() {
 //                var dataString = 'name='+ name + '&email=' + email + '&phone=' + phone;
-                var dataString = $('#form-submit-appointment').serialize();
-                $.ajax({
-                    type: "POST",
-                    url: "controller/cn_setAppointment.php",
-                    data: dataString,
-                    success: function(data) {
-                        console.log(data);
-                    }
-                });
-                $('.alert-success').fadeIn(300);
-                setTimeout(function() {
-                    $('.alert-success').fadeOut(300);
-                },3000);
-                return false;
-            }
-        });
+            var dataString = $('#form-submit-appointment').serialize();
+            $.ajax({
+                type: "POST",
+                url: "controller/cn_setAppointment.php",
+                data: dataString,
+                success: function(data) {
+                    console.log(data);
+                }
+            });
+            $('.alert-success').fadeIn(300);
+            setTimeout(function() {
+                $('.alert-success').fadeOut(300);
+            },3000);
+            return false;
+        }
+    });
 
-//        $('#submit-appointment').click(function() {
-//            alert('test');
-//        });
+    //        $('#submit-appointment').click(function() {
+    //            alert('test');
+    //        });
 
     //    end appointment form script
 </script>

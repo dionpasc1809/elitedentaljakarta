@@ -97,8 +97,8 @@ session_start();
             }
 
             var window_height = $(window).height();
-            var contact_offset = $('#contact').offset().top;
-            var contact_height = $('#contact').height();
+            var contact_offset = $('#footer-section').offset().top;
+            var contact_height = $('#footer-section').height();
 
             var contact_from_bottom = ( ( contact_offset + contact_height ) - window_height ) - 50;
 
