@@ -1,5 +1,8 @@
 *.xml
+.idea/*
 CodeIgniter-3.0rc3.zip
 *.zip
 lib/meekrodb.2.3.class.php
 elitedentaljakarta.sql
+_move/*
+googlea639bdadc743dec5.html
