@@ -770,6 +770,10 @@
     line-height: 100px;
 }
 
+.rating-star.active {
+    background-position: 0 0;
+}
+
 #footer-section {
     position:relative;
     /*background-image:url("../images/comments/BG.jpg");

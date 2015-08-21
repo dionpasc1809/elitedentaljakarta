@@ -5,7 +5,12 @@
 <ul>
     <li ng-repeat="item in items">{{item}}</li>
 </ul>-->
+<?php
+include("../lib/meekrodb.2.3.class.php");
 
+$comments = DB::query("SELECT * FROM tb_comments");
+
+?>
 <div id="home">
     <section id="aboutus">
         <div class="appointment-dropdown">
@@ -585,7 +590,36 @@
                         Comments
                     </div>
                     <div class="comments-inside-wrapper">
+	                    <?php foreach($comments as $cm):
+		                    $nama = $cm['nama'];
+		                    $status = $cm['status'];
+		                    $star_rating = $cm['star_rating'];
+		                    $photo = $cm['photo'];
+		                    $comment_text = $cm['comments'];
+		                    ?>
                         <div class="comment-item">
+                            <div class="comment-item-photo"></div>
+                            <div class="comment-item-header">
+                                <div class="comment-item-header-name"><?php echo $nama; ?></div>
+                                <div class="comment-item-header-title"><?php echo $status; ?></div>
+                            </div>
+                            <div class="comment-item-rating">
+	                            <?php
+
+	                            for($c=1; $c<=5; $c++) {
+
+		                            ?>
+                                <div class="rating-star<?php echo($c<=$star_rating)? " active" : "";  ?>"></div>
+	                            <?php } ?>
+                            </div>
+                            <div class="comment-item-content">
+                                <?php echo $comment_text; ?>
+                            </div>
+                        </div>
+
+	                    <?php endforeach; ?>
+
+                        <!--<div class="comment-item">
                             <div class="comment-item-photo"></div>
                             <div class="comment-item-header">
                                 <div class="comment-item-header-name">John Doe</div>
@@ -635,24 +669,7 @@
                             <div class="comment-item-content">
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus elit in turpis tristique placerat. In pulvinar vehicula libero laoreet tempus. Phasellus eget interdum sapien. Morbi porttitor leo ac congue semper. Ut posuere massa neque, ut dictum lorem molestie eu. Nunc tempus ex vitae feugiat ultricies. Aenean vel purus eu dui pretium hendrerit. Nullam dapibus ante in blandit condimentum..."
                             </div>
-                        </div>
-                        <div class="comment-item">
-                            <div class="comment-item-photo"></div>
-                            <div class="comment-item-header">
-                                <div class="comment-item-header-name">John Doe</div>
-                                <div class="comment-item-header-title">Karyawan</div>
-                            </div>
-                            <div class="comment-item-rating">
-                                <div class="rating-star"></div>
-                                <div class="rating-star"></div>
-                                <div class="rating-star"></div>
-                                <div class="rating-star"></div>
-                                <div class="rating-star"></div>
-                            </div>
-                            <div class="comment-item-content">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus elit in turpis tristique placerat. In pulvinar vehicula libero laoreet tempus. Phasellus eget interdum sapien. Morbi porttitor leo ac congue semper. Ut posuere massa neque, ut dictum lorem molestie eu. Nunc tempus ex vitae feugiat ultricies. Aenean vel purus eu dui pretium hendrerit. Nullam dapibus ante in blandit condimentum..."
-                            </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 <!--                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>-->
