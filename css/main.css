@@ -698,10 +698,51 @@
     display: inline-block;
 }
 
+.comments-btn-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 10px;
+}
+
+.comments-btn {
+    position: relative;
+    display: inline-block;
+    font-family: klavika-m;
+    font-size: 18px;
+    border: 1px solid #2686BF;
+    background-color: transparent;
+    background-image: linear-gradient(0deg, rgba(38,134,191,1) 0%, rgba(38,134,191,1) 50%, rgba(38,134,191,0) 51%, rgba(38,134,191,0) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgba(38,134,191,1) 0%, rgba(38,134,191,1) 50%, rgba(38,134,191,0) 51%, rgba(38,134,191,0) 100%);
+    background-image: -moz-linear-gradient(0deg, rgba(38,134,191,1) 0%, rgba(38,134,191,1) 50%, rgba(38,134,191,0) 51%, rgba(38,134,191,0) 100%);
+    background-image: -o-linear-gradient(0deg, rgba(38,134,191,1) 0%, rgba(38,134,191,1) 50%, rgba(38,134,191,0) 51%, rgba(255,255,255,0) 100%);
+    background-size: 250% 100%;
+    background-position: top right;
+    color: #2686BF !important;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    cursor: hand;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.comments-btn:hover {
+    background-position: top left;
+    background-color:transparent;
+    color:#FFF !important;
+}
+
 .comment-item {
     width: 514px;
     height: 321px;
     float:left;
+    display: inline-block;
     background-image:url('../images/comments/box.png');
     background-repeat: no-repeat;
     background-position: top left;
@@ -876,6 +917,13 @@
 /* ------------------------ end section : contact ------------------------ */
 
 /* ------------------------- Bootstrap media container ------------------------- */
+
+@media screen and (max-width: 1048px) {
+    .comments-inside-wrapper {
+        width: 524px;
+    }
+}
+
 @media screen and (max-width: 991px){/* for Desktops */
     .contact-title {
         font-family: helvetica-neue;

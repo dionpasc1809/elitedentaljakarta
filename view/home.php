@@ -586,9 +586,12 @@ $comments = DB::query("SELECT * FROM tb_comments");
             <div class="row">
 <!--                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>-->
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comments-wrapper">
-                    <div class="contact-title" style="margin-bottom: 30px;">
+                    <div class="contact-title" style="margin-bottom: 10px;">
                         Comments
                     </div>
+	                <div class="comments-btn-wrapper">
+		                <div class="comments-btn" data-toggle="modal" data-target="#InputComments">Post A Comment</div>
+	                </div>
                     <div class="comments-inside-wrapper">
 	                    <?php foreach($comments as $cm):
 		                    $nama = $cm['nama'];
@@ -683,7 +686,7 @@ $comments = DB::query("SELECT * FROM tb_comments");
                     <div class="footer-text">Like / Follow us on :</div>
                     <!--<div class="fb-logo show-pointer" data-toggle="modal" data-target="#fbLike">&nbsp;</div>-->
                     <a href="https://www.facebook.com/elitedentalclinicjakarta" target="_blank"><div class="fb-logo show-pointer">&nbsp;</div></a>
-                    <div class="twitter-logo show-pointer">&nbsp;</div>
+                    <!--<div class="twitter-logo show-pointer">&nbsp;</div>-->
                 </div>
                 <!--<div class="popout-footer">
                     <div class="container">
@@ -728,6 +731,32 @@ $comments = DB::query("SELECT * FROM tb_comments");
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="InputComments" tabindex="-1" role="dialog" aria-labelledby="InputCommentsLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="InputCommentsLabel">
+					This Modal title
+				</h4>
+			</div>
+			<div class="modal-body">
+				Add some text here
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close
+				</button>
+				<button type="button" class="btn btn-primary">
+					Submit changes
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <script type="text/javascript">
     var appointment_dropdown = 0;
