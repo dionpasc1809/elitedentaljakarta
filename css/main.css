@@ -746,8 +746,13 @@
     background-image:url('../images/comments/box.png');
     background-repeat: no-repeat;
     background-position: top left;
+    background-size: 100% 100%;
     padding:30px;
     margin: 5px 5px;
+}
+
+.comment-item:nth-child(n+1) {
+    /*clear:none;*/
 }
 
 .comment-item-photo {
@@ -912,6 +917,39 @@
     line-height: 40px;
 }
 
+#InputComments .modal-dialog {
+    /*width:800px;*/
+}
+
+#InputComments .modal-content {
+    border-radius: 0px;
+}
+
+#InputComments .modal-header {
+    background-color: rgba(38,134,191,1);
+}
+
+#InputComments .modal-header .modal-title {
+    font-family: klavika-m;
+    font-size: 18px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+#InputComments .modal-body {
+    font-family: klavika-l;
+    font-size: 14px;
+}
+
+#InputComments .modal-body textarea {
+    resize: none;
+}
+
+#InputComments .modal-footer .btn {
+    font-family: klavika-l;
+    font-size: 14px;
+    text-transform: uppercase;
+}
 
 
 /* ------------------------ end section : contact ------------------------ */

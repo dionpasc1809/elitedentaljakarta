@@ -736,24 +736,65 @@ $comments = DB::query("SELECT * FROM tb_comments");
 <div class="modal fade" id="InputComments" tabindex="-1" role="dialog" aria-labelledby="InputCommentsLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-					&times;
-				</button>
-				<h4 class="modal-title" id="InputCommentsLabel">
-					This Modal title
-				</h4>
-			</div>
-			<div class="modal-body">
-				Add some text here
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close
-				</button>
-				<button type="button" class="btn btn-primary">
-					Submit changes
-				</button>
-			</div>
+			<form id="submitComment" action="controller/cn_postComment.php" method="post">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title" id="InputCommentsLabel">
+						Input Your Comments Here...
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group row">
+						<div class="col-xs-4">
+							<label>Fullname</label>
+						</div>
+						<div class="col-xs-8">
+							<input type="text" id="inp_cmnt_name" name="inp_cmnt_name" class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-xs-4">
+							<label>Job Title / Status</label>
+						</div>
+						<div class="col-xs-8">
+							<input type="text" id="inp_cmnt_status" name="inp_cmnt_status" class="form-control" placeholder="e.g : Student, Teacher, Employee, etc"/>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-xs-4">
+							<label>Star Rating</label>
+						</div>
+						<div class="col-xs-2">
+							<select class="form-control" id="inp_cmnt_star_rating" name="inp_cmnt_star_rating">
+								<option>5</option>
+								<option>4</option>
+								<option>3</option>
+								<option>2</option>
+								<option>1</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-xs-4">
+							<label>Comments</label>
+						</div>
+						<div class="col-xs-8">
+							<textarea rows="10" class="form-control" id="inp_cmnt_comments" name="inp_cmnt_comments"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel
+					</button>
+					<button type="button" id="btn-comment" class="btn btn-primary">
+						Post Comment
+					</button>
+				</div>
+			</form>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
@@ -774,29 +815,33 @@ $comments = DB::query("SELECT * FROM tb_comments");
     });
     $('.alert').hide();
     //    appointment form script
-    $.validate({
-        onSuccess : function() {
+
+
+    $('#submit-appointment').click(function() {
+	    $.validate({
+		    onSuccess : function() {
 //                var dataString = 'name='+ name + '&email=' + email + '&phone=' + phone;
-            var dataString = $('#form-submit-appointment').serialize();
-            $.ajax({
-                type: "POST",
-                url: "controller/cn_setAppointment.php",
-                data: dataString,
-                success: function(data) {
-                    console.log(data);
-                }
-            });
-            $('.alert-success').fadeIn(300);
-            setTimeout(function() {
-                $('.alert-success').fadeOut(300);
-            },3000);
-            return false;
-        }
+			    var dataString = $('#form-submit-appointment').serialize();
+			    $.ajax({
+				    type: "POST",
+				    url: "controller/cn_setAppointment.php",
+				    data: dataString,
+				    success: function(data) {
+					    console.log(data);
+				    }
+			    });
+			    $('.alert-success').fadeIn(300);
+			    setTimeout(function() {
+				    $('.alert-success').fadeOut(300);
+			    },3000);
+			    return false;
+		    }
+	    });
     });
 
-    //        $('#submit-appointment').click(function() {
-    //            alert('test');
-    //        });
+    $('#btn-comment').click(function() {
+	    $('#submitComment').submit();
+    });
 
     //    end appointment form script
 </script>
