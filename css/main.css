@@ -951,6 +951,15 @@
     text-transform: uppercase;
 }
 
+.comments-no-comment {
+    font-family: klavika-m;
+    font-size: 48px;
+    color: rgba(136,136,136,0.5);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
 
 /* ------------------------ end section : contact ------------------------ */
 

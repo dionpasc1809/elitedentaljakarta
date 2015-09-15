@@ -6,9 +6,14 @@
     <li ng-repeat="item in items">{{item}}</li>
 </ul>-->
 <?php
+session_start();
 include("../lib/meekrodb.2.3.class.php");
 
-$comments = DB::query("SELECT * FROM tb_comments");
+$comments = DB::query("SELECT * FROM tb_comments ORDER BY created_date DESC");
+
+$comments_count = DB::query("SELECT COUNT(*) AS count_cm FROM tb_comments ORDER BY created_date DESC");
+
+$count_cm = $comments_count[0]['count_cm'];
 
 ?>
 <div id="home">
@@ -593,6 +598,9 @@ $comments = DB::query("SELECT * FROM tb_comments");
 		                <div class="comments-btn" data-toggle="modal" data-target="#InputComments">Post A Comment</div>
 	                </div>
                     <div class="comments-inside-wrapper">
+	                    <?php if($count_cm==0): ?>
+	                    <div class="comments-no-comment">No Comments yet</div>
+	                    <?php else: ?>
 	                    <?php foreach($comments as $cm):
 		                    $nama = $cm['nama'];
 		                    $status = $cm['status'];
@@ -673,6 +681,7 @@ $comments = DB::query("SELECT * FROM tb_comments");
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus elit in turpis tristique placerat. In pulvinar vehicula libero laoreet tempus. Phasellus eget interdum sapien. Morbi porttitor leo ac congue semper. Ut posuere massa neque, ut dictum lorem molestie eu. Nunc tempus ex vitae feugiat ultricies. Aenean vel purus eu dui pretium hendrerit. Nullam dapibus ante in blandit condimentum..."
                             </div>
                         </div>-->
+	                    <?php endif; ?>
                     </div>
                 </div>
 <!--                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>-->
@@ -746,6 +755,12 @@ $comments = DB::query("SELECT * FROM tb_comments");
 					</h4>
 				</div>
 				<div class="modal-body">
+					<?php if(isset($_SESSION['comment_exist'])): ?>
+						<div class="alert alert-danger">
+							<strong>Error!</strong> This name has already inputted a comment !!
+						</div>
+						<?php
+					endif; ?>
 					<div class="form-group row">
 						<div class="col-xs-4">
 							<label>Fullname</label>
@@ -813,7 +828,7 @@ $comments = DB::query("SELECT * FROM tb_comments");
             appointment_dropdown=0;
         }
     });
-    $('.alert').hide();
+//    $('.alert').hide();
     //    appointment form script
 
 
@@ -842,6 +857,12 @@ $comments = DB::query("SELECT * FROM tb_comments");
     $('#btn-comment').click(function() {
 	    $('#submitComment').submit();
     });
+
+    <?php if(isset($_SESSION['comment_exist'])): ?>
+    $('#InputComments').modal('show');
+	    <?php
+	unset($_SESSION['comment_exist']);
+	endif; ?>
 
     //    end appointment form script
 </script>
