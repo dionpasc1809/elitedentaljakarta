@@ -55,11 +55,15 @@ $route['admin/doctors/edit/(:num)'] = 'admin/editDoctors/$1';
 $route['admin/promo'] = 'admin/promo';
 $route['admin/promo/edit/(:num)'] = 'admin/editPromo/$1';
 
+$route['admin/comments'] = 'admin/comments';
+$route['admin/comments/set'] = 'admin/setComments';
+
 
 // DATA binding
 $route['admin/appointment/get'] = 'data/getAppointment';
 $route['admin/doctors/get'] = 'data/getDoctors';
 $route['admin/promo/get'] = 'data/getPromo';
+$route['admin/comments/get'] = 'data/getComments';
 
 
 /* End of file routes.php */

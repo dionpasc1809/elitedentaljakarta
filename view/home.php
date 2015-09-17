@@ -9,9 +9,9 @@
 session_start();
 include("../lib/meekrodb.2.3.class.php");
 
-$comments = DB::query("SELECT * FROM tb_comments ORDER BY created_date DESC");
+$comments = DB::query("SELECT * FROM tb_comments WHERE approved=1 ORDER BY created_date DESC");
 
-$comments_count = DB::query("SELECT COUNT(*) AS count_cm FROM tb_comments ORDER BY created_date DESC");
+$comments_count = DB::query("SELECT COUNT(*) AS count_cm FROM tb_comments WHERE approved=1 ORDER BY created_date DESC");
 
 $count_cm = $comments_count[0]['count_cm'];
 
@@ -828,7 +828,7 @@ $count_cm = $comments_count[0]['count_cm'];
             appointment_dropdown=0;
         }
     });
-//    $('.alert').hide();
+    $('.alert-success').hide();
     //    appointment form script
 
 

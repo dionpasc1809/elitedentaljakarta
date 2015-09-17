@@ -55,7 +55,7 @@ $db['default']['password'] = '';
 $db['default']['database'] = 'elitedentaljakarta';
 
 //$db['default']['username'] = 'u0633340_admin';
-//$db['default']['password'] = 'hacker300z';
+//$db['default']['password'] = 'elitedc';
 //$db['default']['database'] = 'u0633340_elitedentaljakarta';
 
 $db['default']['dbdriver'] = 'mysql';

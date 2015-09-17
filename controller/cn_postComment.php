@@ -33,6 +33,7 @@ else {
 		'star_rating'=>$postdata['inp_cmnt_star_rating'],
 		'photo'=>'',
 		'comments'=>$postdata['inp_cmnt_comments'],
+		'approved'=>0,
 		'created_date'=>$this_date,
 		'modified_date'=>$this_date
 	));

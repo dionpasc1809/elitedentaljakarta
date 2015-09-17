@@ -136,6 +136,9 @@
                     <li>
                         <a href="<?php echo site_url('admin/promo'); ?>">Promo</a>
                     </li>
+					<li>
+						<a href="<?php echo site_url('admin/comments'); ?>">Comments</a>
+					</li>
 				</ul>
 			</div>
         </div>
