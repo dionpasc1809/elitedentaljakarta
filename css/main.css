@@ -889,7 +889,7 @@
     line-height: 40px;
 }
 
-.fb-logo, .twitter-logo {
+.fb-logo, .twitter-logo, .ig-logo {
     display: inline-block;
     width: 46px;
     height: 40px;
@@ -897,6 +897,11 @@
     background-image:url("../images/footer-logo.png");
     background-repeat: no-repeat;
     line-height: 45px;
+}
+
+.ig-logo {
+    width: 40px;
+    background-image:url("../images/icon_instagram.png");
 }
 
 .fb-logo {

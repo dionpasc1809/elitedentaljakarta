@@ -695,6 +695,7 @@ $count_cm = $comments_count[0]['count_cm'];
                     <div class="footer-text">Like / Follow us on :</div>
                     <!--<div class="fb-logo show-pointer" data-toggle="modal" data-target="#fbLike">&nbsp;</div>-->
                     <a href="https://www.facebook.com/elitedentalclinicjakarta" target="_blank"><div class="fb-logo show-pointer">&nbsp;</div></a>
+	                <a href="http://www.instagram.com/elitedentalclinic" target="_blank"><div class="ig-logo show-pointer">&nbsp;</div></a>
                     <!--<div class="twitter-logo show-pointer">&nbsp;</div>-->
                 </div>
                 <!--<div class="popout-footer">
